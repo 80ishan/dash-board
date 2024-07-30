@@ -7,7 +7,7 @@ function App() {
             <div className="flex gap-3 items-center ps-6 py-7 pe-32 border-b-2 border-gray-300 max-w-fit">
               <img
                 className=" w-7"
-                src="assets/dashboard-layout-svgrepo-com.png"
+                src="/dashboard-layout-svgrepo-com.png"
                 alt=""
               />
               <h1 className=" font-bold text-2xl">PayTide</h1>
