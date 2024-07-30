@@ -18,25 +18,21 @@ function App() {
                 <li className="flex gap-3 pl-5 mb-8 items-center">
                   <img
                     className="w-6"
-                    src="assets/dashboard-svgrepo-com.svg"
+                    src="/dashboard-svgrepo-com.svg"
                     alt=""
                   />
                   Dashboard
                 </li>
 
                 <li className="flex gap-3 pl-5 mb-8 items-center">
-                  <img
-                    className="w-6"
-                    src="assets/people-svgrepo-com.svg"
-                    alt=""
-                  />
+                  <img className="w-6" src="/people-svgrepo-com.svg" alt="" />
                   All Employees
                 </li>
 
                 <li className="flex gap-3 pl-5 mb-8 items-center">
                   <img
                     className="w-6"
-                    src="assets/clipboard-text-svgrepo-com.svg"
+                    src="/clipboard-text-svgrepo-com.svg"
                     alt=""
                   />
                   Checklist
@@ -45,61 +41,49 @@ function App() {
                 <li className="flex gap-3 pl-5 mb-8 items-center">
                   <img
                     className="w-6"
-                    src="assets/dollar-sign-round-svgrepo-com.svg"
+                    src="/dollar-sign-round-svgrepo-com.svg"
                     alt=""
                   />
                   Payroll
                 </li>
 
                 <li className="flex gap-3 pl-5 mb-8 items-center">
-                  <img
-                    className="w-6"
-                    src="assets/trend-up-svgrepo-com.svg"
-                    alt=""
-                  />
+                  <img className="w-6" src="/trend-up-svgrepo-com.svg" alt="" />
                   Expenses Analytics
                 </li>
 
                 <li className="flex gap-3 pl-5 mb-8 items-center">
                   <img
                     className="w-6"
-                    src="assets/percentage-label-svgrepo-com.svg"
+                    src="/percentage-label-svgrepo-com.svg"
                     alt=""
                   />
                   Tax Advice
                 </li>
 
                 <li className="flex gap-3 pl-5 mb-8 items-center">
-                  <img
-                    className="w-6"
-                    src="assets/suitcase-svgrepo-com.svg"
-                    alt=""
-                  />
+                  <img className="w-6" src="/suitcase-svgrepo-com.svg" alt="" />
                   Accounting
                 </li>
 
                 <li className="flex gap-3 pl-5 mb-8 items-center">
                   <img
                     className="w-6"
-                    src="assets/group-add-people-svgrepo-com.svg"
+                    src="/group-add-people-svgrepo-com.svg"
                     alt=""
                   />
                   Recruitement
                 </li>
 
                 <li className="flex gap-3 pl-5 mb-8 items-center">
-                  <img
-                    className="w-6"
-                    src="assets/settings-svgrepo-com.svg"
-                    alt=""
-                  />
+                  <img className="w-6" src="/settings-svgrepo-com.svg" alt="" />
                   Settings
                 </li>
 
                 <li className="flex gap-3 pl-5 mb-8 items-center">
                   <img
                     className="w-6"
-                    src="assets/headphones-alt-2-svgrepo-com.svg"
+                    src="/headphones-alt-2-svgrepo-com.svg"
                     alt=""
                   />
                   Help & Support
@@ -110,7 +94,7 @@ function App() {
                 <div className="p-5 mt-20">
                   <div className="flex flex-col gap-3 border-2 items-center p-3 rounded-lg">
                     <img
-                      src="assets/shield.svg"
+                      src="/shield.svg"
                       alt=""
                       className="w-12 rounded-full"
                     />
@@ -126,7 +110,7 @@ function App() {
                       </span>
                       <img
                         className="w-4"
-                        src="assets/right-arrow-svgrepo-com.svg"
+                        src="/right-arrow-svgrepo-com.svg"
                         alt=""
                       />
                     </div>
@@ -135,7 +119,7 @@ function App() {
 
                 <div className="logout flex gap-3 items-center mx-5 mt-2 w-fit">
                   <img
-                    src="assets/log-out-02-svgrepo-com.svg"
+                    src="/log-out-02-svgrepo-com.svg"
                     className="w-7"
                     alt=""
                   />
@@ -148,11 +132,7 @@ function App() {
           <div className="right min-h-fit col-span-6">
             <header className="header w-full flex border-b-2 border-gray-300 px-7 py-5 justify-between">
               <div className="border-2 rounded-xl inline-flex items-center gap-3 ps-3.5 py-2.5 pe-36">
-                <img
-                  className="w-6"
-                  src="assets/search-alt-svgrepo-com.svg"
-                  alt=""
-                />
+                <img className="w-6" src="/search-alt-svgrepo-com.svg" alt="" />
                 <span
                   className="text-gray-400
               "
@@ -165,7 +145,7 @@ function App() {
                 <div className="flex items-center py-1 px-2.5 border-2 rounded-full">
                   <img
                     className="w-6"
-                    src="assets/notification-svgrepo-com.svg"
+                    src="/notification-svgrepo-com.svg"
                     alt=""
                   />
                 </div>
@@ -173,7 +153,7 @@ function App() {
                 <div className="seperator border-[1px]"></div>
 
                 <div className="flex gap-2">
-                  <img src="assets/Daco_4205588.png" className="w-12" alt="" />
+                  <img src="/Daco_4205588.png" className="w-12" alt="" />
 
                   <p className="font-semibold">
                     Brian F <br />
@@ -184,7 +164,7 @@ function App() {
                 </div>
 
                 <img
-                  src="assets/down-arrow-5-svgrepo-com.svg  "
+                  src="/down-arrow-5-svgrepo-com.svg  "
                   alt=""
                   className="w-8"
                 />
@@ -203,11 +183,7 @@ function App() {
 
                   <div className="button h-fit rounded-xl py-3.5 px-7 flex gap-2 items-center justify-center bg-violet-600">
                     <span className="text-white ">Create Reports</span>
-                    <img
-                      src="assets/plus-svgrepo-com.svg "
-                      className="w-6 "
-                      alt=""
-                    />
+                    <img src="/plus-svgrepo-com.svg " className="w-6 " alt="" />
                   </div>
                 </div>
                 <div className="cards mt-9">
@@ -215,7 +191,7 @@ function App() {
                     <div className="balance flex flex-col gap-3 bg-white p-5 rounded-xl">
                       <div className="head flex gap-2 items-center">
                         <img
-                          src="assets/money.svg"
+                          src="/money.svg"
                           alt=""
                           className="w-6 rounded-full"
                         />
@@ -235,7 +211,7 @@ function App() {
                     <div className="expense flex flex-col gap-3 bg-white p-5 rounded-xl">
                       <div className="head flex gap-2 items-center">
                         <img
-                          src="assets/note.svg"
+                          src="/note.svg"
                           alt=""
                           className="w-6 rounded-full"
                         />
@@ -255,7 +231,7 @@ function App() {
                     <div className="salary flex flex-col gap-3 bg-white p-5 rounded-xl">
                       <div className="head flex gap-2 items-center">
                         <img
-                          src="assets/wallet (1).svg"
+                          src="/wallet (1).svg"
                           alt=""
                           className="w-6 rounded-full"
                         />
@@ -275,7 +251,7 @@ function App() {
                     <div className="date flex flex-col gap-3 bg-white p-5 rounded-xl">
                       <div className="head flex gap-2 items-center">
                         <img
-                          src="assets/coin.svg"
+                          src="/coin.svg"
                           alt=""
                           className="w-6 rounded-full"
                         />
@@ -305,14 +281,14 @@ function App() {
 
                         <div className="btn border-2 px-4 py-3 rounded-xl flex items-center">
                           <img
-                            src="assets/calendar-week-svgrepo-com.svg"
+                            src="/calendar-week-svgrepo-com.svg"
                             alt=""
                             className="w-7 mr-3"
                           />
                           <span> 01 Jan - 01 Dec</span>
                           <img
                             className="w-7"
-                            src="assets/down-arrow-5-svgrepo-com.svg"
+                            src="/down-arrow-5-svgrepo-com.svg"
                             alt=""
                           />
                         </div>
@@ -401,7 +377,7 @@ function App() {
                         <h3 className="font-bold text-xl">Employment Status</h3>
                         <img
                           className="w-7"
-                          src="assets/three-dots-line-svgrepo-com.svg"
+                          src="/three-dots-line-svgrepo-com.svg"
                           alt=""
                         />
                       </div>
