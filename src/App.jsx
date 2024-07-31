@@ -90,7 +90,7 @@ function App() {
                 </li>
               </ul>
 
-              <div className="bottom fixed">
+              <div className="bottom">
                 <div className="p-5 mt-20">
                   <div className="flex flex-col gap-3 border-2 items-center p-3 rounded-lg">
                     <img
@@ -268,7 +268,6 @@ function App() {
                       </p>
                     </div>
                   </div>
-
                   <div className="middle mt-7 grid grid-cols-3 grid-rows-1 gap-6">
                     <div className="activities col-span-2 bg-white py-5 px-7 rounded-xl">
                       <div className="head flex justify-between items-center">
@@ -441,6 +440,209 @@ function App() {
                             </span>
                           </li>
                         </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bottom mt-8 grid grid-cols-3 grid-rows-3 gap-6">
+                    <div className="list bg-white py-5 px-7 rounded-xl col-span-2 row-span-3">
+                      <div className="head flex justify-between">
+                        <div className="border-2 rounded-xl inline-flex items-center gap-3 ps-3.5 py-2.5 pe-14">
+                          <img
+                            className="w-6"
+                            src="/search-alt-svgrepo-com.svg"
+                            alt=""
+                          />
+                          <span className="text-gray-400">
+                            Search something here
+                          </span>
+                        </div>
+
+                        <div className="buttons flex gap-4">
+                          <div className="btn border-2 px-4 py-3 rounded-xl flex items-center">
+                            <span> All Employement Type</span>
+                            <img
+                              className="w-7"
+                              src="/down-arrow-5-svgrepo-com.svg"
+                              alt=""
+                            />
+                          </div>
+
+                          <div className="btn border-2 px-4 py-3 rounded-xl flex items-center">
+                            <img
+                              src="/calendar-week-svgrepo-com.svg"
+                              alt=""
+                              className="w-7 mr-3"
+                            />
+                            <span>1 Jul 2024 - 1 Aug 2024</span>
+                            <img
+                              className="w-7"
+                              src="/down-arrow-5-svgrepo-com.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <table class="w-full mt-8">
+                        <thead className="border-b-2">
+                          <tr>
+                            <th class="bg-gray-50 px-5 py-4 text-gray-800 text-left">
+                              Employee
+                            </th>
+                            <th class="bg-gray-50 px-5 py-4 text-gray-800 text-left">
+                              Role
+                            </th>
+                            <th class="bg-gray-50 px-5 py-4 text-gray-800 text-left">
+                              Hours
+                            </th>
+                            <th class="bg-gray-50 px-5 py-4 text-gray-800 text-left">
+                              Total Salary
+                            </th>
+                            <th class="bg-gray-50 py-4 text-gray-800 text-left">
+                              Status
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-b-2">
+                            <td class="flex items-center gap-3 px-5 py-4">
+                              <img
+                                className="w-7"
+                                src="/Daco_4205588.png"
+                                alt=""
+                              />
+                              <span>Aisha Doe</span>
+                            </td>
+                            <td className="px-5 py-4">HR Manager</td>
+                            <td className="px-5 py-2">160</td>
+                            <td className="px-5 py-2">$1,200.00</td>
+                            <td className="py-2">Paid</td>
+                          </tr>
+
+                          <tr className="border-b-2">
+                            <td class="flex items-center gap-3 px-5 py-4">
+                              <img
+                                className="w-7"
+                                src="/Daco_4205588.png"
+                                alt=""
+                              />
+                              <span>Chukeweumeka</span>
+                            </td>
+                            <td className="px-5 py-2">Software Eng.</td>
+                            <td className="px-5 py-2">176</td>
+                            <td className="px-5 py-2">$2,000.00</td>
+                            <td className="py-2">Pending</td>
+                          </tr>
+
+                          <tr className="border-b-2">
+                            <td class="flex items-center gap-3 px-5 py-4">
+                              <img
+                                className="w-7"
+                                src="/Daco_4205588.png"
+                                alt=""
+                              />
+                              <span>Mohammed</span>
+                            </td>
+                            <td className="px-5 py-2">Marketing EX.</td>
+                            <td className="px-5 py-2">150</td>
+                            <td className="px-5 py-2">$1,500.00</td>
+                            <td className="py-2">Paid</td>
+                          </tr>
+
+                          <tr className="border-b-2">
+                            <td class="flex items-center gap-3 px-5 py-4">
+                              <img
+                                className="w-7"
+                                src="/Daco_4205588.png"
+                                alt=""
+                              />
+                              <span>Afolyan</span>
+                            </td>
+                            <td className="px-5 py-2">UI/UX Designer</td>
+                            <td className="px-5 py-2">168</td>
+                            <td className="px-5 py-2">$1,800.00</td>
+                            <td className="py-2">Paid</td>
+                          </tr>
+
+                          <tr className="border-b-2">
+                            <td class="flex items-center gap-3 px-5 py-4">
+                              <img
+                                className="w-7"
+                                src="/Daco_4205588.png"
+                                alt=""
+                              />
+                              <span>Bhagvad</span>
+                            </td>
+                            <td className="px-5 py-2">Back End Developer</td>
+                            <td className="px-5 py-2">200</td>
+                            <td className="px-5 py-2">$4,400.00</td>
+                            <td className="py-2">Paid</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div className="payment bg-white py-5 px-7 rounded-xl">
+                      <div className="head flex items-center gap-2">
+                        <img
+                          className="w-8 rounded-full"
+                          src="/bank.svg "
+                          alt=""
+                        />
+                        <h3 className="text-base">Payment Account</h3>
+                      </div>
+
+                      <div className="my-4 seperator border-[1px] w-full"></div>
+
+                      <p className="body text-2xl font-bold">
+                        Zenith Bank Account <br />
+                        <span className="text-base font-normal text-green-600">
+                          Connected
+                        </span>
+                      </p>
+                    </div>
+
+                    <div className="client bg-white py-8 px-7 rounded-xl row-span-2">
+                      <div className="head mb-8 flex justify-between">
+                        <div className="front flex items-start gap-5">
+                          <img className="w-8" src="/wallet.svg" alt="" />
+                          <p className="text-lg leading-[3rem] text-gray-600">
+                            Payment <br />
+                            <span className="font-bold text-3xl text-black">
+                              $2,670.50
+                            </span>
+                          </p>
+                        </div>
+
+                        <div className="back mt-2.5 flex flex-col items-end">
+                          <span className="text-indigo-600 mr-2">
+                            April 1, 2024
+                          </span>
+                          <div className="box mt-2.5 bg-orange-50 text-orange-300 px-4 py-1.5 rounded-xl flex items-center gap-3">
+                            <div className="circle bg-orange-300 rounded-full w-2 h-2"></div>
+                            PENDING
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex flex-col justify-between border-2 px-4 py-3 rounded-2xl">
+                        <span className="text-lg mb-3 text-gray-600">
+                          Client
+                        </span>
+                        <div className="client flex gap-6 items-center mb-4">
+                          <img
+                            className="w-20"
+                            src="/Daco_4205588.png"
+                            alt=""
+                          />
+                          <div className="text font-bold flex flex-col">
+                            <span>Angela Nagelsman</span>
+                            <span className="font-normal text-gray-600">
+                              Saphore Inc
+                            </span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
