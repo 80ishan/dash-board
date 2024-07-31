@@ -2,8 +2,8 @@ function App() {
   return (
     <>
       <div className="container relative min-h-fit max-w-full">
-        <div className="container-inner relative grid grid-cols-7">
-          <nav className="navbar fixed h-fit max-w-fit border-r-2 border-gray-300">
+        <div className="container-inner relative flex items-start">
+          <nav className="navbar top-0 sticky h-fit max-w-fit border-r-2 border-gray-300">
             <div className="flex gap-3 items-center ps-6 py-7 pe-28 border-b-2 border-gray-300 max-w-fit">
               <img
                 className=" w-7"
@@ -91,7 +91,7 @@ function App() {
               </ul>
 
               <div className="bottom">
-                <div className="p-5 mt-20">
+                <div className="p-5 mt-14">
                   <div className="flex flex-col gap-3 border-2 items-center p-3 rounded-lg">
                     <img
                       src="/shield.svg"
@@ -129,7 +129,7 @@ function App() {
             </div>
           </nav>
 
-          <div className="right min-h-fit col-span-6 col-start-2">
+          <div className="right min-h-fit w-full col-span-6 col-start-2">
             <header className="header w-full flex border-b-2 border-gray-300 px-7 py-5 justify-between">
               <div className="border-2 rounded-xl inline-flex items-center gap-3 ps-3.5 py-2.5 pe-36">
                 <img className="w-6" src="/search-alt-svgrepo-com.svg" alt="" />
