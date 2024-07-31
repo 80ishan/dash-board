@@ -14,8 +14,8 @@ function App() {
             </div>
 
             <div className="main">
-              <ul className=" pt-10">
-                <li className="flex gap-3 pl-5 leading-[51px] items-center">
+              <ul className=" pt-4">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
                   <img
                     className="w-6"
                     src="/dashboard-svgrepo-com.svg"
@@ -24,12 +24,12 @@ function App() {
                   Dashboard
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
                   <img className="w-6" src="/people-svgrepo-com.svg" alt="" />
                   All Employees
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
                   <img
                     className="w-6"
                     src="/clipboard-text-svgrepo-com.svg"
@@ -38,7 +38,7 @@ function App() {
                   Checklist
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
                   <img
                     className="w-6"
                     src="/dollar-sign-round-svgrepo-com.svg"
@@ -47,12 +47,12 @@ function App() {
                   Payroll
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
                   <img className="w-6" src="/trend-up-svgrepo-com.svg" alt="" />
                   Expenses Analytics
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
                   <img
                     className="w-6"
                     src="/percentage-label-svgrepo-com.svg"
@@ -61,12 +61,12 @@ function App() {
                   Tax Advice
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
                   <img className="w-6" src="/suitcase-svgrepo-com.svg" alt="" />
                   Accounting
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
                   <img
                     className="w-6"
                     src="/group-add-people-svgrepo-com.svg"
@@ -75,12 +75,12 @@ function App() {
                   Recruitement
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
                   <img className="w-6" src="/settings-svgrepo-com.svg" alt="" />
                   Settings
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
                   <img
                     className="w-6"
                     src="/headphones-alt-2-svgrepo-com.svg"
@@ -92,7 +92,7 @@ function App() {
 
               <div className="bottom">
                 <div className="p-5">
-                  <div className="flex flex-col gap-3 mt-10 border-2 items-center p-3 rounded-lg">
+                  <div className="flex flex-col gap-3 border-2 items-center p-3 rounded-lg">
                     <img
                       src="/shield.svg"
                       alt=""
