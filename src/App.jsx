@@ -13,7 +13,7 @@ function App() {
               <h1 className=" font-bold text-2xl">PayTide</h1>
             </div>
 
-            <div className="main  ">
+            <div className="main">
               <ul className=" pt-10">
                 <li className="flex gap-3 pl-5 mb-8 items-center">
                   <img
