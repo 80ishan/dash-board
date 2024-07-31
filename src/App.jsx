@@ -606,8 +606,8 @@ function App() {
                     <div className="client bg-white py-8 px-7 rounded-xl row-span-2">
                       <div className="head mb-8 flex justify-between">
                         <div className="front flex items-start gap-5">
-                          <img className="w-8" src="/wallet.svg" alt="" />
-                          <p className="text-lg leading-[3rem] text-gray-600">
+                          <img className="w-9" src="/calendar.svg" alt="" />
+                          <p className="text-lg leading-[2rem] text-gray-600">
                             Payment <br />
                             <span className="font-bold text-3xl text-black">
                               $2,670.50
