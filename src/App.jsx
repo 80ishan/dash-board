@@ -3,7 +3,7 @@ function App() {
     <>
       <div className="container relative min-h-fit max-w-full">
         <div className="container-inner relative flex items-start">
-          <nav className="navbar top-0 sticky h-fit max-w-fit border-r-2 border-gray-300">
+          <nav className="navbar top-0 sticky h-screen max-w-fit border-r-2 border-gray-300">
             <div className="flex gap-3 items-center ps-6 py-7 pe-28 border-b-2 border-gray-300 max-w-fit">
               <img
                 className=" w-7"
@@ -91,8 +91,8 @@ function App() {
               </ul>
 
               <div className="bottom">
-                <div className="p-5 mt-14">
-                  <div className="flex flex-col gap-3 border-2 items-center p-3 rounded-lg">
+                <div className="p-5">
+                  <div className="flex flex-col gap-3 mt-10 border-2 items-center p-3 rounded-lg">
                     <img
                       src="/shield.svg"
                       alt=""
