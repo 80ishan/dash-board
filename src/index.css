@@ -7,3 +7,15 @@
     font-family: "Jakarta Sans", sans-serif;
   }
 }
+
+.mobile-drop {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .mobile-drop {
+  display: block;
+}

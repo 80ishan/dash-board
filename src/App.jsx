@@ -3,7 +3,7 @@ function App() {
     <>
       <div className="container relative min-h-fit max-w-full">
         <div className="container-inner relative flex items-start">
-          <nav className="bottom-mobile fixed bottom-0 px-6 z-10 bg-white w-screen shadow-[0_-35px_60px_-15px_rgba(0,0,0,0.1)] md:hidden">
+          <header className="bottom-mobile fixed bottom-0 px-10 z-10 bg-white w-screen shadow-[0_-35px_60px_-15px_rgba(0,0,0,0.1)] md:hidden max-[425px]:px-6">
             <ul className="pt-4 flex justify-between">
               <li className="leading-[35px] flex flex-col mb-3 mt-1 items-center max-[375px]:mb-5">
                 <img className="w-6" src="/dashboard-svgrepo-com.svg" alt="" />
@@ -33,97 +33,97 @@ function App() {
                 <span className="max-[375px]:hidden">Accounting</span>
               </li>
             </ul>
-          </nav>
+          </header>
 
-          <nav className="navbar top-0 sticky h-screen max-w-fit border-r-2 border-gray-300 md: max-md:hidden">
-            <div className="flex gap-3 items-center ps-6 py-7 pe-28 border-b-2 border-gray-300 max-w-fit">
+          <nav className="navbar top-0 sticky h-screen max-w-fit border-r-2 border-gray-300 max-md:hidden">
+            <div className="flex gap-3 items-center ps-6 py-7 pe-28 border-b-2 border-gray-300 max-w-fit max-xl:pe-6 max-xl:py-8">
               <img
                 className=" w-7"
                 src="/dashboard-layout-svgrepo-com.png"
                 alt=""
               />
-              <h1 className=" font-bold text-2xl">PayTide</h1>
+              <h1 className="font-bold text-2xl max-xl:hidden">PayTide</h1>
             </div>
 
-            <div className="main">
-              <ul className=" pt-4">
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
+            <div className="main flex flex-col justify-between h-[90%]">
+              <ul className=" pt-4 flex flex-col items-start max-xl:items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
                   <img
                     className="w-6"
                     src="/dashboard-svgrepo-com.svg"
                     alt=""
                   />
-                  Dashboard
+                  <span className="max-xl:hidden">Dashboard</span>
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
                   <img className="w-6" src="/people-svgrepo-com.svg" alt="" />
-                  All Employees
+                  <span className="max-xl:hidden">All Employees</span>
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
                   <img
                     className="w-6"
                     src="/clipboard-text-svgrepo-com.svg"
                     alt=""
                   />
-                  Checklist
+                  <span className="max-xl:hidden">Checklist</span>
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
                   <img
                     className="w-6"
                     src="/dollar-sign-round-svgrepo-com.svg"
                     alt=""
                   />
-                  Payroll
+                  <span className="max-xl:hidden">Payroll</span>
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
                   <img className="w-6" src="/trend-up-svgrepo-com.svg" alt="" />
-                  Expenses Analytics
+                  <span className="max-xl:hidden">Expenses Analytics</span>
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
                   <img
                     className="w-6"
                     src="/percentage-label-svgrepo-com.svg"
                     alt=""
                   />
-                  Tax Advice
+                  <span className="max-xl:hidden">Tax Advice</span>
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
                   <img className="w-6" src="/suitcase-svgrepo-com.svg" alt="" />
-                  Accounting
+                  <span className="max-xl:hidden">Accounting</span>
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
                   <img
                     className="w-6"
                     src="/group-add-people-svgrepo-com.svg"
                     alt=""
                   />
-                  Recruitement
+                  <span className="max-xl:hidden">Recruitment</span>
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
                   <img className="w-6" src="/settings-svgrepo-com.svg" alt="" />
-                  Settings
+                  <span className="max-xl:hidden">Settings</span>
                 </li>
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center">
+                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
                   <img
                     className="w-6"
                     src="/headphones-alt-2-svgrepo-com.svg"
                     alt=""
                   />
-                  Help & Support
+                  <span className="max-xl:hidden">Help & Support</span>
                 </li>
               </ul>
 
               <div className="bottom">
-                <div className="p-5">
+                <div className="p-5 max-xl:hidden">
                   <div className="flex flex-col gap-3 border-2 items-center p-3 rounded-lg">
                     <img
                       src="/shield.svg"
@@ -149,58 +149,122 @@ function App() {
                   </div>
                 </div>
 
-                <div className="logout flex gap-3 items-center mx-5 mt-2 w-fit">
+                <div className="logout flex gap-3 items-center mx-5 w-fit">
                   <img
                     src="/log-out-02-svgrepo-com.svg"
                     className="w-7"
                     alt=""
                   />
-                  <span>Log Out</span>
+                  <span className="max-xl:hidden">Log Out</span>
                 </div>
               </div>
             </div>
           </nav>
 
           <div className="right min-h-fit w-full col-span-6 col-start-2">
-            <header className="header w-full flex border-b-2 border-gray-300 px-7 py-5 justify-between">
-              <img className="w-10 md:hidden" src="/burger-menu.svg" alt="" />
-              <div className="border-2 rounded-xl inline-flex items-center gap-3 ps-3.5 py-2.5 pe-36 md: max-md:hidden">
-                <img className="w-6" src="/search-alt-svgrepo-com.svg" alt="" />
-                <span
-                  className="text-gray-400
-              "
-                >
-                  Search something here
-                </span>
+            <header className="header w-[full] flex border-b-2 border-gray-300 px-7 py-5 justify-between max-lg:py-4">
+              <label htmlFor="check" className="menu">
+                <img className="w-10 md:hidden" src="/burger-menu.svg" alt="" />
+              </label>
+
+              <input type="checkbox" id="check" />
+              <div className="mobile-drop border-b-2 border-gray-300 py-5 px-8 pb-10 h-full text-center fixed left-0 top-0 bg-white shadow-lg z-10 w-[50%]">
+                <div className="top flex justify-between">
+                  <div className="div flex items-center gap-3">
+                    <img
+                      className="w-8"
+                      src="/dashboard-layout-svgrepo-com.png"
+                      alt=""
+                    />
+                    <span className="font-bold text-2xl leading-6">
+                      Pay <br />
+                      Tide
+                    </span>
+                  </div>
+
+                  <label htmlFor="check" className="menu mt-2">
+                    <img className="w-8" src="/close.svg" alt="" />
+                  </label>
+                </div>
+
+                <ul className="flex flex-col justify-center gap-14 h-full">
+                  <li className="flex items-cente gap-3">
+                    <img className="w-7" src="/people-svgrepo-com.svg" alt="" />
+                    All Employees
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <img
+                      className="w-7"
+                      src="/clipboard-text-svgrepo-com.svg  "
+                      alt=""
+                    />
+                    Checklist
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <img
+                      className="w-7"
+                      src="/trend-up-svgrepo-com.svg"
+                      alt=""
+                    />
+                    Expense Analytics
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <img
+                      className="w-7"
+                      src="/group-add-people-svgrepo-com.svg"
+                      alt=""
+                    />
+                    Recruitment
+                  </li>
+                </ul>
               </div>
 
-              <div className="flex gap-8 md: max-md:gap-3">
-                <div className="flex items-center py-1 px-2.5 border-2 rounded-full">
+              <div className="big-head flex justify-between w-full max-md:justify-end">
+                <div className="border-2 rounded-xl inline-flex items-center gap-3 ps-3.5 py-2.5 pe-36 max-md:hidden max-lg:p-3.5">
                   <img
                     className="w-6"
-                    src="/notification-svgrepo-com.svg"
+                    src="/search-alt-svgrepo-com.svg"
                     alt=""
                   />
+                  <span
+                    className="text-gray-400 max-lg:hidden
+              "
+                  >
+                    Search something here
+                  </span>
                 </div>
 
-                <div className="seperator border-[1px]"></div>
+                <div className="flex gap-8 max-md:gap-3">
+                  <div className="flex items-center py-1 px-2.5 border-2 rounded-full max-lg:px-3.5">
+                    <img
+                      className="w-6"
+                      src="/notification-svgrepo-com.svg"
+                      alt=""
+                    />
+                  </div>
 
-                <div className="flex gap-2">
-                  <img src="/Daco_4205588.png" className="w-12" alt="" />
+                  <div className="seperator border-[1px]"></div>
 
-                  <p className="font-semibold md: max-md:hidden">
-                    Brian F <br />
-                    <span className="font-medium text-gray-500">
-                      brianf@mail.com
-                    </span>
-                  </p>
+                  <div className="flex gap-2 items-center">
+                    <img src="/Daco_4205588.png" className="w-12 h-12" alt="" />
+
+                    <p className="font-semibold max-md:hidden">
+                      Brian F <br />
+                      <span className="font-medium text-gray-500">
+                        brianf@mail.com
+                      </span>
+                    </p>
+                  </div>
+
+                  <img
+                    src="/down-arrow-5-svgrepo-com.svg  "
+                    alt=""
+                    className="w-8 max-[320px]:hidden"
+                  />
                 </div>
-
-                <img
-                  src="/down-arrow-5-svgrepo-com.svg  "
-                  alt=""
-                  className="w-8 max-[320px]:hidden"
-                />
               </div>
             </header>
 
@@ -214,15 +278,15 @@ function App() {
                     </span>
                   </h2>
 
-                  <div className="button h-fit rounded-xl py-3.5 px-7 flex gap-2 items-center justify-center bg-violet-600 md: max-md:p-4">
-                    <span className="text-white md: max-md:hidden">
+                  <div className="button h-fit rounded-xl py-3.5 px-7 flex gap-2 items-center justify-center bg-violet-600 max-md:p-4">
+                    <span className="text-white max-md:hidden">
                       Create Reports
                     </span>
                     <img src="/plus-svgrepo-com.svg " className="w-6" alt="" />
                   </div>
                 </div>
                 <div className="cards mt-9">
-                  <div className="top grid grid-cols-4 grid-rows-1 gap-4 md: max-md:grid-cols-2">
+                  <div className="top grid grid-cols-4 grid-rows-1 gap-4 max-md:grid-cols-2">
                     <div className="balance flex flex-col gap-3 bg-white p-5 rounded-xl">
                       <div className="head flex gap-2 items-center">
                         <img
@@ -313,7 +377,7 @@ function App() {
                   </div>
 
                   <div className="middle mt-7 grid grid-cols-3 grid-rows-1 gap-6">
-                    <div className="activities col-span-2 bg-white py-5 px-7 rounded-xl md: max-md:hidden">
+                    <div className="activities col-span-2 bg-white py-2 px-7 rounded-xl flex flex-col justify-around max-lg:hidden">
                       <div className="head flex justify-between items-center">
                         <h3 className="text-gray-600 text-xl">
                           All activities <br />
@@ -416,7 +480,7 @@ function App() {
                       </div>
                     </div>
 
-                    <div className="status bg-white py-5 px-7 rounded-xl md: max-md:col-span-3">
+                    <div className="status bg-white py-5 px-7 rounded-xl max-lg:col-span-3">
                       <div className="head flex justify-between">
                         <h3 className="font-bold text-xl">Employment Status</h3>
                         <img
@@ -496,10 +560,10 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="bottom mt-8 grid grid-cols-3 grid-rows-3 gap-6 md: max-md:grid-cols-1 ">
-                    <div className="list bg-white py-5 px-7 rounded-xl col-span-2 row-span-3 md: max-md:hidden">
+                  <div className="bottom mt-8 grid grid-cols-3 grid-rows-3 gap-6 max-md:grid-cols-1 max-xl:grid-rows-2 max-xl:grid-cols-2">
+                    <div className="list bg-white py-5 px-7 rounded-xl col-span-2 row-span-3 flex flex-col justify-around max-xl:hidden">
                       <div className="head flex justify-between">
-                        <div className="border-2 rounded-xl inline-flex items-center gap-3 ps-3.5 py-2.5 pe-14">
+                        <div className="border-2 rounded-xl inline-flex items-center gap-3 ps-3.5 py-2.5 pe-14 max-lg:w-full">
                           <img
                             className="w-6"
                             src="/search-alt-svgrepo-com.svg"
@@ -511,7 +575,7 @@ function App() {
                         </div>
 
                         <div className="buttons flex gap-4">
-                          <div className="btn border-2 px-4 py-3 rounded-xl flex items-center">
+                          <div className="btn border-2 px-4 py-3 rounded-xl flex items-center max-[1600px]:hidden">
                             <span> All Employement Type</span>
                             <img
                               className="w-7"
@@ -520,7 +584,7 @@ function App() {
                             />
                           </div>
 
-                          <div className="btn border-2 px-4 py-3 rounded-xl flex items-center">
+                          <div className="btn border-2 px-4 py-3 rounded-xl flex items-center max-lg:hidden">
                             <img
                               src="/calendar-week-svgrepo-com.svg"
                               alt=""
@@ -551,7 +615,7 @@ function App() {
                             <th class="bg-gray-50 px-5 py-4 text-gray-800 text-left">
                               Total Salary
                             </th>
-                            <th class="bg-gray-50 py-4 text-gray-800 text-left">
+                            <th class="bg-gray-50 py-4 text-gray-800 text-left max-[1260px]:hidden">
                               Status
                             </th>
                           </tr>
@@ -569,7 +633,7 @@ function App() {
                             <td className="px-5 py-4">HR Manager</td>
                             <td className="px-5 py-2">160</td>
                             <td className="px-5 py-2">$1,200.00</td>
-                            <td className="py-2">Paid</td>
+                            <td className="py-2 max-[1260px]:hidden">Paid</td>
                           </tr>
 
                           <tr className="border-b-2">
@@ -584,7 +648,9 @@ function App() {
                             <td className="px-5 py-2">Software Eng.</td>
                             <td className="px-5 py-2">176</td>
                             <td className="px-5 py-2">$2,000.00</td>
-                            <td className="py-2">Pending</td>
+                            <td className="py-2 max-[1260px]:hidden">
+                              Pending
+                            </td>
                           </tr>
 
                           <tr className="border-b-2">
@@ -599,7 +665,7 @@ function App() {
                             <td className="px-5 py-2">Marketing EX.</td>
                             <td className="px-5 py-2">150</td>
                             <td className="px-5 py-2">$1,500.00</td>
-                            <td className="py-2">Paid</td>
+                            <td className="py-2 max-[1260px]:hidden">Paid</td>
                           </tr>
 
                           <tr className="border-b-2">
@@ -614,7 +680,7 @@ function App() {
                             <td className="px-5 py-2">UI/UX Designer</td>
                             <td className="px-5 py-2">168</td>
                             <td className="px-5 py-2">$1,800.00</td>
-                            <td className="py-2">Paid</td>
+                            <td className="py-2 max-[1260px]:hidden">Paid</td>
                           </tr>
 
                           <tr className="border-b-2">
@@ -629,37 +695,56 @@ function App() {
                             <td className="px-5 py-2">Back End Developer</td>
                             <td className="px-5 py-2">200</td>
                             <td className="px-5 py-2">$4,400.00</td>
-                            <td className="py-2">Paid</td>
+                            <td className="py-2 max-[1260px]:hidden">Paid</td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
 
-                    <div className="payment bg-white py-5 px-7 rounded-xl">
-                      <div className="head flex items-center gap-2">
-                        <img
-                          className="w-8 rounded-full"
-                          src="/bank.svg "
-                          alt=""
-                        />
-                        <h3 className="text-base">Payment Account</h3>
+                    <div className="payment bg-white py-5 px-7 rounded-xl flex flex-col justify-between max-md:justify-around max-md:py-2">
+                      <div className="wrapper">
+                        <div className="head flex items-center gap-2">
+                          <img
+                            className="w-8 rounded-full"
+                            src="/bank.svg "
+                            alt=""
+                          />
+                          <h3 className="text-base">Payment Account</h3>
+                        </div>
+                        <div className="my-4 seperator border-[1px] w-full"></div>
                       </div>
 
-                      <div className="my-4 seperator border-[1px] w-full"></div>
-
-                      <p className="body text-2xl font-bold">
+                      <p className="body text-2xl font-bold max-md:hidden">
                         Zenith Bank Account <br />
                         <span className="text-base font-normal text-green-600">
                           Connected
                         </span>
                       </p>
+
+                      <div className="flex flex-col justify-between border-2 px-4 py-3 rounded-2xl max-sm:items-center md:hidden">
+                        <div className="client flex gap-6 items-center mb-4 max-sm:flex-col">
+                          <img
+                            className="w-20"
+                            src="/deposit-safe-savings-svgrepo-com.svg"
+                            alt=""
+                          />
+                          <div className="text font-bold flex flex-col">
+                            <p className="body text-lg font-bold">
+                              Zenith Bank Account <br />
+                              <span className="text-base font-normal text-green-600">
+                                Connected
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
-                    <div className="client bg-white py-8 px-7 rounded-xl row-span-2 max-md:mb-16">
-                      <div className="head mb-8 flex justify-between">
+                    <div className="client bg-white py-8 px-7 rounded-xl row-span-2 max-md:mb-16 flex flex-col justify-between">
+                      <div className="head flex justify-between">
                         <div className="front flex items-start gap-5">
                           <img
-                            className="w-9 sm: max-sm:hidden"
+                            className="w-9 max-[1600px]:hidden"
                             src="/calendar.svg"
                             alt=""
                           />
@@ -671,7 +756,7 @@ function App() {
                           </p>
                         </div>
 
-                        <div className="back mt-2.5 flex flex-col items-end max-sm:hidden">
+                        <div className="back mt-2.5 flex flex-col items-end max-xl:hidden">
                           <span className="text-indigo-600 mr-2">
                             April 1, 2024
                           </span>
