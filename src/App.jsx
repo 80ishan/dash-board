@@ -176,10 +176,6 @@ function App() {
                       src="/dashboard-layout-svgrepo-com.png"
                       alt=""
                     />
-                    <span className="font-bold text-2xl leading-6">
-                      Pay <br />
-                      Tide
-                    </span>
                   </div>
 
                   <label htmlFor="check" className="menu mt-2">
