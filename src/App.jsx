@@ -3,7 +3,39 @@ function App() {
     <>
       <div className="container relative min-h-fit max-w-full">
         <div className="container-inner relative flex items-start">
-          <nav className="navbar top-0 sticky h-screen max-w-fit border-r-2 border-gray-300">
+          <nav className="bottom-mobile fixed bottom-0 px-6 z-10 bg-white w-screen shadow-[0_-35px_60px_-15px_rgba(0,0,0,0.1)] md:hidden">
+            <ul className="pt-4 flex justify-between">
+              <li className="leading-[35px] flex flex-col mb-3 mt-1 items-center max-[375px]:mb-5">
+                <img className="w-6" src="/dashboard-svgrepo-com.svg" alt="" />
+                <span className="max-[375px]:hidden">Dashboard</span>
+              </li>
+
+              <li className="leading-[35px] flex flex-col mb-3 mt-1 items-center max-[375px]:mb-5">
+                <img
+                  className="w-6"
+                  src="/dollar-sign-round-svgrepo-com.svg"
+                  alt=""
+                />
+                <span className="max-[375px]:hidden">Payroll</span>
+              </li>
+
+              <li className="leading-[35px] flex flex-col mb-3 mt-1 items-center max-[375px]:mb-5">
+                <img
+                  className="w-6"
+                  src="/percentage-label-svgrepo-com.svg"
+                  alt=""
+                />
+                <span className="max-[375px]:hidden">Tax Advice</span>
+              </li>
+
+              <li className="leading-[35px] flex flex-col mb-3 mt-1 items-center max-[375px]:mb-5">
+                <img className="w-6" src="/suitcase-svgrepo-com.svg" alt="" />
+                <span className="max-[375px]:hidden">Accounting</span>
+              </li>
+            </ul>
+          </nav>
+
+          <nav className="navbar top-0 sticky h-screen max-w-fit border-r-2 border-gray-300 md: max-md:hidden">
             <div className="flex gap-3 items-center ps-6 py-7 pe-28 border-b-2 border-gray-300 max-w-fit">
               <img
                 className=" w-7"
@@ -131,7 +163,8 @@ function App() {
 
           <div className="right min-h-fit w-full col-span-6 col-start-2">
             <header className="header w-full flex border-b-2 border-gray-300 px-7 py-5 justify-between">
-              <div className="border-2 rounded-xl inline-flex items-center gap-3 ps-3.5 py-2.5 pe-36">
+              <img className="w-10 md:hidden" src="/burger-menu.svg" alt="" />
+              <div className="border-2 rounded-xl inline-flex items-center gap-3 ps-3.5 py-2.5 pe-36 md: max-md:hidden">
                 <img className="w-6" src="/search-alt-svgrepo-com.svg" alt="" />
                 <span
                   className="text-gray-400
@@ -141,7 +174,7 @@ function App() {
                 </span>
               </div>
 
-              <div className="flex gap-8">
+              <div className="flex gap-8 md: max-md:gap-3">
                 <div className="flex items-center py-1 px-2.5 border-2 rounded-full">
                   <img
                     className="w-6"
@@ -155,7 +188,7 @@ function App() {
                 <div className="flex gap-2">
                   <img src="/Daco_4205588.png" className="w-12" alt="" />
 
-                  <p className="font-semibold">
+                  <p className="font-semibold md: max-md:hidden">
                     Brian F <br />
                     <span className="font-medium text-gray-500">
                       brianf@mail.com
@@ -166,7 +199,7 @@ function App() {
                 <img
                   src="/down-arrow-5-svgrepo-com.svg  "
                   alt=""
-                  className="w-8"
+                  className="w-8 max-[320px]:hidden"
                 />
               </div>
             </header>
@@ -174,33 +207,37 @@ function App() {
             <div className="main h-full bg-gray-100">
               <div className="wrapper h-full px-8 py-12">
                 <div className="head flex justify-between ">
-                  <h2 className="font-bold text-5xl leading-9">
+                  <h2 className="font-bold text-5xl leading-10">
                     Hi There, <br />
                     <span className="font-thin text-lg text-gray-500">
                       Welcome To Paytide.
                     </span>
                   </h2>
 
-                  <div className="button h-fit rounded-xl py-3.5 px-7 flex gap-2 items-center justify-center bg-violet-600">
-                    <span className="text-white ">Create Reports</span>
-                    <img src="/plus-svgrepo-com.svg " className="w-6 " alt="" />
+                  <div className="button h-fit rounded-xl py-3.5 px-7 flex gap-2 items-center justify-center bg-violet-600 md: max-md:p-4">
+                    <span className="text-white md: max-md:hidden">
+                      Create Reports
+                    </span>
+                    <img src="/plus-svgrepo-com.svg " className="w-6" alt="" />
                   </div>
                 </div>
                 <div className="cards mt-9">
-                  <div className="top grid grid-cols-4 grid-rows-1 gap-4 ">
+                  <div className="top grid grid-cols-4 grid-rows-1 gap-4 md: max-md:grid-cols-2">
                     <div className="balance flex flex-col gap-3 bg-white p-5 rounded-xl">
                       <div className="head flex gap-2 items-center">
                         <img
                           src="/money.svg"
                           alt=""
-                          className="w-6 rounded-full"
+                          className="w-6 rounded-full max-[320px]:hidden"
                         />
-                        <h3 className="text-lg">Company Balance</h3>
+                        <h3 className="text-lg max-sm:text-base">
+                          Company Balance
+                        </h3>
                       </div>
 
                       <div className="seperator border-[1px] w-full"></div>
 
-                      <p className="body font-bold text-2xl leading-7">
+                      <p className="body font-bold text-2xl leading-7 sm: max-sm:text-lg break-all">
                         $123,350,00.56 <br />
                         <span className="font-normal text-base text-gray-500">
                           30% increase since last month.
@@ -213,14 +250,16 @@ function App() {
                         <img
                           src="/note.svg"
                           alt=""
-                          className="w-6 rounded-full"
+                          className="w-6 rounded-full max-[320px]:hidden"
                         />
-                        <h3 className="text-lg">Company Expense</h3>
+                        <h3 className="text-lg max-sm:text-base">
+                          Company Expense
+                        </h3>
                       </div>
 
                       <div className="seperator border-[1px] w-full"></div>
 
-                      <p className="body font-bold text-2xl leading-7">
+                      <p className="body font-bold text-2xl leading-7 max-sm:text-lg break-all">
                         $55,000.00 <br />
                         <span className="font-normal text-base text-gray-500">
                           10% increase since last month.
@@ -233,14 +272,16 @@ function App() {
                         <img
                           src="/wallet (1).svg"
                           alt=""
-                          className="w-6 rounded-full"
+                          className="w-6 rounded-full max-[320px]:hidden"
                         />
-                        <h3 className="text-lg">Upcoming Salary Amount</h3>
+                        <h3 className="text-lg max-sm:text-base">
+                          Upcoming Salary Amount
+                        </h3>
                       </div>
 
                       <div className="seperator border-[1px] w-full"></div>
 
-                      <p className="body font-bold text-2xl leading-7">
+                      <p className="body font-bold text-2xl leading-7 max-sm:text-lg break-all">
                         $4,350,00.89 <br />
                         <span className="font-normal text-base text-gray-500">
                           3,121 employees
@@ -253,14 +294,16 @@ function App() {
                         <img
                           src="/coin.svg"
                           alt=""
-                          className="w-6 rounded-full"
+                          className="w-6 rounded-full max-[320px]:hidden"
                         />
-                        <h3 className="text-lg">Upcoming Salary Date</h3>
+                        <h3 className="text-lg max-sm:text-base">
+                          Upcoming Salary Date
+                        </h3>
                       </div>
 
                       <div className="seperator border-[1px] w-full"></div>
 
-                      <p className="body font-bold text-2xl leading-7">
+                      <p className="body font-bold text-2xl leading-7 max-sm:text-lg break-all">
                         July 5th, 2024 <br />
                         <span className="font-normal text-base text-gray-500">
                           In 4 days time
@@ -268,8 +311,9 @@ function App() {
                       </p>
                     </div>
                   </div>
+
                   <div className="middle mt-7 grid grid-cols-3 grid-rows-1 gap-6">
-                    <div className="activities col-span-2 bg-white py-5 px-7 rounded-xl">
+                    <div className="activities col-span-2 bg-white py-5 px-7 rounded-xl md: max-md:hidden">
                       <div className="head flex justify-between items-center">
                         <h3 className="text-gray-600 text-xl">
                           All activities <br />
@@ -371,7 +415,8 @@ function App() {
                         </div>
                       </div>
                     </div>
-                    <div className="status bg-white py-5 px-7 rounded-xl">
+
+                    <div className="status bg-white py-5 px-7 rounded-xl md: max-md:col-span-3">
                       <div className="head flex justify-between">
                         <h3 className="font-bold text-xl">Employment Status</h3>
                         <img
@@ -402,40 +447,47 @@ function App() {
 
                       <div className="count">
                         <ul className="flex flex-col gap-6">
-                          <li className="flex justify-between border-2 px-4 py-3 rounded-2xl">
+                          <li className="flex justify-between border-2 px-4 py-3 rounded-2xl max-sm:justify-center">
                             <div className="front flex items-center gap-2">
                               <div className="dot bg-orange-400 w-2 h-2 rounded-full"></div>
-                              <span className="text-lg">Intern Employee</span>
+                              <span className="text-lg">
+                                Intern
+                                <span className="max-sm:hidden"> Employee</span>
+                              </span>
                             </div>
-                            <span className="flex gap-2 items-center">
+                            <span className="flex gap-2 items-center max-sm:hidden">
                               21
-                              <div className="seperator border-[0.125rem] rounded-full h-[60%]"></div>{" "}
+                              <div className="seperator border-[0.125rem] rounded-full h-[60%]"></div>
                               15%
                             </span>
                           </li>
 
-                          <li className="flex justify-between border-2 px-4 py-3 rounded-2xl">
+                          <li className="flex justify-between border-2 px-4 py-3 rounded-2xl max-sm:justify-center">
                             <div className="front flex items-center gap-2">
                               <div className="dot bg-violet-700 w-2 h-2 rounded-full"></div>
                               <span className="text-lg">
-                                Permanent Employee
+                                Permanent
+                                <span className="max-sm:hidden"> Employee</span>
                               </span>
                             </div>
-                            <span className="flex gap-2 items-center">
+                            <span className="flex gap-2 items-center max-sm:hidden">
                               84
-                              <div className="seperator border-[0.125rem] rounded-full h-[60%]"></div>{" "}
+                              <div className="seperator border-[0.125rem] rounded-full h-[60%]"></div>
                               60%
                             </span>
                           </li>
 
-                          <li className="flex justify-between border-2 px-4 py-3 rounded-2xl">
+                          <li className="flex justify-between border-2 px-4 py-3 rounded-2xl max-sm:justify-center">
                             <div className="front flex items-center gap-2">
                               <div className="dot bg-blue-700 w-2 h-2 rounded-full"></div>
-                              <span className="text-lg">Intern Employee</span>
+                              <span className="text-lg">
+                                Probationary
+                                <span className="max-sm:hidden"> Employee</span>
+                              </span>
                             </div>
-                            <span className="flex gap-2 items-center">
+                            <span className="flex gap-2 items-center max-sm:hidden">
                               45
-                              <div className="seperator border-[0.125rem] rounded-full h-[60%]"></div>{" "}
+                              <div className="seperator border-[0.125rem] rounded-full h-[60%]"></div>
                               25%
                             </span>
                           </li>
@@ -444,8 +496,8 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="bottom mt-8 grid grid-cols-3 grid-rows-3 gap-6">
-                    <div className="list bg-white py-5 px-7 rounded-xl col-span-2 row-span-3">
+                  <div className="bottom mt-8 grid grid-cols-3 grid-rows-3 gap-6 md: max-md:grid-cols-1 ">
+                    <div className="list bg-white py-5 px-7 rounded-xl col-span-2 row-span-3 md: max-md:hidden">
                       <div className="head flex justify-between">
                         <div className="border-2 rounded-xl inline-flex items-center gap-3 ps-3.5 py-2.5 pe-14">
                           <img
@@ -603,10 +655,14 @@ function App() {
                       </p>
                     </div>
 
-                    <div className="client bg-white py-8 px-7 rounded-xl row-span-2">
+                    <div className="client bg-white py-8 px-7 rounded-xl row-span-2 max-md:mb-16">
                       <div className="head mb-8 flex justify-between">
                         <div className="front flex items-start gap-5">
-                          <img className="w-9" src="/calendar.svg" alt="" />
+                          <img
+                            className="w-9 sm: max-sm:hidden"
+                            src="/calendar.svg"
+                            alt=""
+                          />
                           <p className="text-lg leading-[2rem] text-gray-600">
                             Payment <br />
                             <span className="font-bold text-3xl text-black">
@@ -615,7 +671,7 @@ function App() {
                           </p>
                         </div>
 
-                        <div className="back mt-2.5 flex flex-col items-end">
+                        <div className="back mt-2.5 flex flex-col items-end max-sm:hidden">
                           <span className="text-indigo-600 mr-2">
                             April 1, 2024
                           </span>
@@ -626,11 +682,11 @@ function App() {
                         </div>
                       </div>
 
-                      <div className="flex flex-col justify-between border-2 px-4 py-3 rounded-2xl">
+                      <div className="flex flex-col justify-between border-2 px-4 py-3 rounded-2xl max-sm:items-center">
                         <span className="text-lg mb-3 text-gray-600">
                           Client
                         </span>
-                        <div className="client flex gap-6 items-center mb-4">
+                        <div className="client flex gap-6 items-center mb-4 max-sm:flex-col">
                           <img
                             className="w-20"
                             src="/Daco_4205588.png"
