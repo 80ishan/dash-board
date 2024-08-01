@@ -234,7 +234,7 @@ function App() {
                 </div>
 
                 <div className="flex gap-8 max-md:gap-3">
-                  <div className="flex items-center py-1 px-2.5 border-2 rounded-full max-lg:px-3.5">
+                  <div className="flex items-center py-1 px-2.5 border-2 rounded-full max-lg:px-3.5 max-md:px-2.5">
                     <img
                       className="w-6"
                       src="/notification-svgrepo-com.svg"
