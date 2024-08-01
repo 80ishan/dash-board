@@ -172,7 +172,7 @@ function App() {
               </label>
 
               <input type="checkbox" id="check" />
-              <div className="mobile-drop overflow-hidden border-b-2 border-gray-300 py-5 px-8 pb-10 h-full text-center fixed left-0 top-0 bg-white shadow-lg z-10 w-[50%]">
+              <div className="mobile-drop border-b-2 border-gray-300 py-5 px-8 pb-10 h-full text-center fixed left-0 top-0 bg-white shadow-lg z-10 w-[50%]">
                 <div className="top flex justify-between">
                   <div className="div flex items-center gap-3">
                     <img
