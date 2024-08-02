@@ -172,23 +172,15 @@ function App() {
               </label>
 
               <input type="checkbox" id="check" />
-              <div className="mobile-drop border-gray-300 py-5 px-8 h-screen text-center fixed left-0 top-0 bg-white shadow-lg z-10 w-[50%] max-[425px]:text-xs">
-                <div className="top flex justify-between">
-                  <div className="div flex items-center gap-3">
-                    <img
-                      className="w-8"
-                      src="/dashboard-layout-svgrepo-com.png"
-                      alt=""
-                    />
-                  </div>
-
-                  <label htmlFor="check" className="menu mt-2">
+              <div className="mobile-drop border-gray-300 py-8 px-8 h-screen text-center fixed left-0 top-0 bg-white shadow-lg z-10 w-screen max-[425px]:text-xs">
+                <div className="top flex justify-between w-full">
+                  <label htmlFor="check" className="menu">
                     <img className="w-8" src="/close.svg" alt="" />
                   </label>
                 </div>
 
-                <ul className="flex flex-col justify-center gap-14 h-full">
-                  <li className="flex items-cente gap-3">
+                <ul className="flex flex-col justify-center gap-16 w-fit">
+                  <li className="flex items-cente gap-3 text-left">
                     <img className="w-7" src="/people-svgrepo-com.svg" alt="" />
                     All Employees
                   </li>

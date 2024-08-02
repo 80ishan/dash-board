@@ -10,6 +10,8 @@
 
 .mobile-drop {
   display: none;
+  height: 42%;
+  align-items: center;
 }
 
 #check {
@@ -17,5 +19,7 @@
 }
 
 #check:checked ~ .mobile-drop {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
