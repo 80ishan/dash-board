@@ -177,45 +177,66 @@ function App() {
                   <label htmlFor="check" className="menu">
                     <img className="w-8" src="/close.svg" alt="" />
                   </label>
-
-                  <img
-                    className="w-8"
-                    src="/dashboard-layout-svgrepo-com.svg"
-                    alt=""
-                  />
                 </div>
 
                 <ul className="flex flex-col justify-center gap-14 h-[80%]">
-                  <li className="flex items-cente gap-3">
-                    <img className="w-7" src="/people-svgrepo-com.svg" alt="" />
-                    All Employees
+                  <li>
+                    <div className="flex items-center gap-3 mb-3">
+                      <img
+                        className="w-7"
+                        src="/people-svgrepo-com.svg"
+                        alt=""
+                      />
+                      All Employees
+                    </div>
+                    <div className="seperator border-[1px]"></div>
                   </li>
 
-                  <li className="flex items-center gap-3">
-                    <img
-                      className="w-7"
-                      src="/clipboard-text-svgrepo-com.svg  "
-                      alt=""
-                    />
-                    Checklist
+                  <li>
+                    <div className="flex items-center gap-3 mb-3">
+                      <img
+                        className="w-7"
+                        src="/clipboard-text-svgrepo-com.svg  "
+                        alt=""
+                      />
+                      Checklist
+                    </div>
+                    <div className="seperator border-[1px]"></div>
                   </li>
 
-                  <li className="flex items-center gap-3">
-                    <img
-                      className="w-7"
-                      src="/trend-up-svgrepo-com.svg"
-                      alt=""
-                    />
-                    Expense Analytics
+                  <li>
+                    <div className="flex items-center gap-3 mb-3">
+                      <img
+                        className="w-7"
+                        src="/trend-up-svgrepo-com.svg"
+                        alt=""
+                      />
+                      Expense Analytics
+                    </div>
+                    <div className="seperator border-[1px]"></div>
                   </li>
 
-                  <li className="flex items-center gap-3">
-                    <img
-                      className="w-7"
-                      src="/group-add-people-svgrepo-com.svg"
-                      alt=""
-                    />
-                    Recruitment
+                  <li>
+                    <div className="flex items-center gap-3 mb-3">
+                      <img
+                        className="w-7"
+                        src="/group-add-people-svgrepo-com.svg"
+                        alt=""
+                      />
+                      Recruitment
+                    </div>
+                    <div className="seperator border-[1px]"></div>
+                  </li>
+
+                  <li>
+                    <div className="flex items-center gap-3 mb-3">
+                      <img
+                        className="w-7"
+                        src="/log-out-02-svgrepo-com.svg  "
+                        alt=""
+                      />
+                      Log Out
+                    </div>
                   </li>
                 </ul>
               </div>
