@@ -39,7 +39,7 @@ function App() {
             <div className="flex gap-3 items-center ps-6 py-7 pe-28 border-b-2 border-gray-300 max-w-fit max-xl:pe-6 max-xl:py-8">
               <img
                 className=" w-7"
-                src="/dashboard-layout-svgrepo-com.png"
+                src="/dashboard-layout-svgrepo-com.svg"
                 alt=""
               />
               <h1 className="font-bold text-2xl max-xl:hidden">PayTide</h1>
@@ -180,7 +180,7 @@ function App() {
 
                   <img
                     className="w-8"
-                    src="/dashboard-layout-svgrepo-com.png"
+                    src="/dashboard-layout-svgrepo-com.svg"
                     alt=""
                   />
                 </div>
