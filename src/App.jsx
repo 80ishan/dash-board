@@ -284,7 +284,7 @@ function App() {
                   </div>
                 </div>
                 <div className="cards mt-9">
-                  <div className="top grid grid-cols-4 grid-rows-1 gap-4 max-md:grid-cols-2">
+                  <div className="top grid grid-cols-4 grid-rows-1 gap-4 max-xl:grid-cols-2">
                     <div className="balance flex flex-col gap-3 bg-white p-5 rounded-xl">
                       <div className="head flex gap-2 items-center">
                         <img
