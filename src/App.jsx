@@ -172,7 +172,7 @@ function App() {
               </label>
 
               <input type="checkbox" id="check" />
-              <div className="mobile-drop border-gray-300 py-5 px-8 h-screen text-center fixed left-0 top-0 bg-white shadow-lg z-10 w-[50%] max-[425px]:text-xs">
+              <div className="mobile-drop border-gray-300 py-5 px-8 h-screen text-center fixed left-0 top-0 bg-white shadow-lg z-10 w-[75%] max-[425px]:text-xs">
                 <div className="top flex justify-between">
                   <label htmlFor="check" className="menu">
                     <img className="w-8" src="/close.svg" alt="" />
