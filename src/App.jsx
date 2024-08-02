@@ -174,17 +174,15 @@ function App() {
               <input type="checkbox" id="check" />
               <div className="mobile-drop border-gray-300 py-5 px-8 h-screen text-center fixed left-0 top-0 bg-white shadow-lg z-10 w-[50%] max-[425px]:text-xs">
                 <div className="top flex justify-between">
-                  <div className="div flex items-center gap-3">
-                    <img
-                      className="w-8"
-                      src="/dashboard-layout-svgrepo-com.png"
-                      alt=""
-                    />
-                  </div>
-
                   <label htmlFor="check" className="menu">
                     <img className="w-8" src="/close.svg" alt="" />
                   </label>
+
+                  <img
+                    className="w-8"
+                    src="/dashboard-layout-svgrepo-com.png"
+                    alt=""
+                  />
                 </div>
 
                 <ul className="flex flex-col justify-center gap-14 h-[80%]">
