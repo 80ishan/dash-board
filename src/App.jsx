@@ -35,7 +35,7 @@ function App() {
             </ul>
           </header>
 
-          <nav className="navbar top-0 sticky h-screen max-w-fit border-r-2 border-gray-300 max-md:hidden">
+          <nav className="navbar overflow-scroll top-0 sticky h-screen max-w-fit border-r-2 border-gray-300 max-md:hidden">
             <div className="flex gap-3 items-center ps-6 py-7 pe-28 border-b-2 border-gray-300 max-w-fit max-xl:pe-6 max-xl:py-8">
               <img
                 className=" w-7"
@@ -136,7 +136,7 @@ function App() {
                       enhance your security.
                     </p>
 
-                    <div className="flex gap-3 justify-center items-center py-3 px-12 bg-violet-600 rounded-lg">
+                    <div className="flex gap-3 justify-center items-center py-3 px-10 bg-violet-600 rounded-lg">
                       <span className="text-xs text-white whitespace-nowrap">
                         Upgrade Pro
                       </span>
