@@ -35,7 +35,7 @@ function App() {
             </ul>
           </header>
 
-          <nav className="navbar overflow-scroll top-0 sticky h-screen max-w-fit border-r-2 border-gray-300 max-md:hidden">
+          <nav className="navbar overflow-x-scroll top-0 sticky h-screen max-w-fit border-r-2 border-gray-300 max-md:hidden">
             <div className="flex gap-3 items-center ps-6 py-7 pe-28 border-b-2 border-gray-300 max-w-fit max-xl:pe-6 max-xl:py-8">
               <img
                 className=" w-7"
@@ -271,9 +271,9 @@ function App() {
                     <img src="/Daco_4205588.png" className="w-12 h-12" alt="" />
 
                     <p className="font-semibold max-md:hidden">
-                      Brian F <br />
+                      Ishan C <br />
                       <span className="font-medium text-gray-500">
-                        brianf@mail.com
+                        ishanc@mail.com
                       </span>
                     </p>
                   </div>
