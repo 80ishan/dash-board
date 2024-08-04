@@ -19,3 +19,7 @@
 #check:checked ~ .mobile-drop {
   display: block;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+}

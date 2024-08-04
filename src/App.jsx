@@ -35,7 +35,7 @@ function App() {
             </ul>
           </header>
 
-          <nav className="navbar overflow-x-scroll top-0 sticky h-screen max-w-fit border-r-2 border-gray-300 max-md:hidden">
+          <nav className="navbar scroll top-0 sticky h-screen max-w-fit border-r-2 border-gray-300 max-md:hidden">
             <div className="flex gap-3 items-center ps-6 py-7 pe-28 border-b-2 border-gray-300 max-w-fit max-xl:pe-6 max-xl:py-8">
               <img
                 className=" w-7"
