@@ -38,7 +38,7 @@ function App() {
           <nav className="navbar overflow-y-scroll scroll top-0 sticky h-screen max-w-fit border-r-2 border-gray-300 max-md:hidden">
             <div className="flex gap-3 items-center ps-6 py-7 pe-28 border-b-2 border-gray-300 max-w-fit max-xl:pe-6 max-xl:py-8">
               <img
-                className=" w-7"
+                className="h-6 w-7"
                 src="/dashboard-layout-svgrepo-com.svg"
                 alt=""
               />
@@ -47,79 +47,356 @@ function App() {
 
             <div className="main flex flex-col justify-between h-[90%]">
               <ul className=" pt-4 flex flex-col items-start max-xl:items-center">
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
-                  <img
-                    className="w-6"
-                    src="/dashboard-svgrepo-com.svg"
-                    alt=""
-                  />
-                  <span className="max-xl:hidden">Dashboard</span>
-                </li>
+                <a
+                  className="group flex hover:bg-gradient-to-r from-indigo-50 to-white w-full mb-2"
+                  href=""
+                >
+                  <div className="bar my-auto invisible rounded-full w-1 h-[90%] bg-indigo-400 group-hover:visible"></div>
+                  <li className="flex w-full gap-3 pl-4 leading-[60px] items-center max-xl:py-[0.97rem]">
+                    <svg
+                      className="w-6 h-6"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        className="group-hover:fill-indigo-600"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M2.8 1L2.74967 0.99997C2.52122 0.999752 2.32429 0.999564 2.14983 1.04145C1.60136 1.17312 1.17312 1.60136 1.04145 2.14983C0.999564 2.32429 0.999752 2.52122 0.99997 2.74967L1 2.8V5.2L0.99997 5.25033C0.999752 5.47878 0.999564 5.67572 1.04145 5.85017C1.17312 6.39864 1.60136 6.82688 2.14983 6.95856C2.32429 7.00044 2.52122 7.00025 2.74967 7.00003L2.8 7H5.2L5.25033 7.00003C5.47878 7.00025 5.67572 7.00044 5.85017 6.95856C6.39864 6.82688 6.82688 6.39864 6.95856 5.85017C7.00044 5.67572 7.00025 5.47878 7.00003 5.25033L7 5.2V2.8L7.00003 2.74967C7.00025 2.52122 7.00044 2.32429 6.95856 2.14983C6.82688 1.60136 6.39864 1.17312 5.85017 1.04145C5.67572 0.999564 5.47878 0.999752 5.25033 0.99997L5.2 1H2.8ZM2.38328 2.01382C2.42632 2.00348 2.49222 2 2.8 2H5.2C5.50779 2 5.57369 2.00348 5.61672 2.01382C5.79955 2.05771 5.94229 2.20045 5.98619 2.38328C5.99652 2.42632 6 2.49222 6 2.8V5.2C6 5.50779 5.99652 5.57369 5.98619 5.61672C5.94229 5.79955 5.79955 5.94229 5.61672 5.98619C5.57369 5.99652 5.50779 6 5.2 6H2.8C2.49222 6 2.42632 5.99652 2.38328 5.98619C2.20045 5.94229 2.05771 5.79955 2.01382 5.61672C2.00348 5.57369 2 5.50779 2 5.2V2.8C2 2.49222 2.00348 2.42632 2.01382 2.38328C2.05771 2.20045 2.20045 2.05771 2.38328 2.01382ZM9.8 1L9.74967 0.99997C9.52122 0.999752 9.32429 0.999564 9.14983 1.04145C8.60136 1.17312 8.17312 1.60136 8.04145 2.14983C7.99956 2.32429 7.99975 2.52122 7.99997 2.74967L8 2.8V5.2L7.99997 5.25033C7.99975 5.47878 7.99956 5.67572 8.04145 5.85017C8.17312 6.39864 8.60136 6.82688 9.14983 6.95856C9.32429 7.00044 9.52122 7.00025 9.74967 7.00003L9.8 7H12.2L12.2503 7.00003C12.4788 7.00025 12.6757 7.00044 12.8502 6.95856C13.3986 6.82688 13.8269 6.39864 13.9586 5.85017C14.0004 5.67572 14.0003 5.47878 14 5.25033L14 5.2V2.8L14 2.74967C14.0003 2.52122 14.0004 2.32429 13.9586 2.14983C13.8269 1.60136 13.3986 1.17312 12.8502 1.04145C12.6757 0.999564 12.4788 0.999752 12.2503 0.99997L12.2 1H9.8ZM9.38328 2.01382C9.42632 2.00348 9.49222 2 9.8 2H12.2C12.5078 2 12.5737 2.00348 12.6167 2.01382C12.7995 2.05771 12.9423 2.20045 12.9862 2.38328C12.9965 2.42632 13 2.49222 13 2.8V5.2C13 5.50779 12.9965 5.57369 12.9862 5.61672C12.9423 5.79955 12.7995 5.94229 12.6167 5.98619C12.5737 5.99652 12.5078 6 12.2 6H9.8C9.49222 6 9.42632 5.99652 9.38328 5.98619C9.20045 5.94229 9.05771 5.79955 9.01382 5.61672C9.00348 5.57369 9 5.50779 9 5.2V2.8C9 2.49222 9.00348 2.42632 9.01382 2.38328C9.05771 2.20045 9.20045 2.05771 9.38328 2.01382ZM2.74967 7.99997L2.8 8H5.2L5.25033 7.99997C5.47878 7.99975 5.67572 7.99956 5.85017 8.04145C6.39864 8.17312 6.82688 8.60136 6.95856 9.14983C7.00044 9.32429 7.00025 9.52122 7.00003 9.74967L7 9.8V12.2L7.00003 12.2503C7.00025 12.4788 7.00044 12.6757 6.95856 12.8502C6.82688 13.3986 6.39864 13.8269 5.85017 13.9586C5.67572 14.0004 5.47878 14.0003 5.25033 14L5.2 14H2.8L2.74967 14C2.52122 14.0003 2.32429 14.0004 2.14983 13.9586C1.60136 13.8269 1.17312 13.3986 1.04145 12.8502C0.999564 12.6757 0.999752 12.4788 0.99997 12.2503L1 12.2V9.8L0.99997 9.74967C0.999752 9.52122 0.999564 9.32429 1.04145 9.14983C1.17312 8.60136 1.60136 8.17312 2.14983 8.04145C2.32429 7.99956 2.52122 7.99975 2.74967 7.99997ZM2.8 9C2.49222 9 2.42632 9.00348 2.38328 9.01382C2.20045 9.05771 2.05771 9.20045 2.01382 9.38328C2.00348 9.42632 2 9.49222 2 9.8V12.2C2 12.5078 2.00348 12.5737 2.01382 12.6167C2.05771 12.7995 2.20045 12.9423 2.38328 12.9862C2.42632 12.9965 2.49222 13 2.8 13H5.2C5.50779 13 5.57369 12.9965 5.61672 12.9862C5.79955 12.9423 5.94229 12.7995 5.98619 12.6167C5.99652 12.5737 6 12.5078 6 12.2V9.8C6 9.49222 5.99652 9.42632 5.98619 9.38328C5.94229 9.20045 5.79955 9.05771 5.61672 9.01382C5.57369 9.00348 5.50779 9 5.2 9H2.8ZM9.8 8L9.74967 7.99997C9.52122 7.99975 9.32429 7.99956 9.14983 8.04145C8.60136 8.17312 8.17312 8.60136 8.04145 9.14983C7.99956 9.32429 7.99975 9.52122 7.99997 9.74967L8 9.8V12.2L7.99997 12.2503C7.99975 12.4788 7.99956 12.6757 8.04145 12.8502C8.17312 13.3986 8.60136 13.8269 9.14983 13.9586C9.32429 14.0004 9.52122 14.0003 9.74967 14L9.8 14H12.2L12.2503 14C12.4788 14.0003 12.6757 14.0004 12.8502 13.9586C13.3986 13.8269 13.8269 13.3986 13.9586 12.8502C14.0004 12.6757 14.0003 12.4788 14 12.2503L14 12.2V9.8L14 9.74967C14.0003 9.52122 14.0004 9.32429 13.9586 9.14983C13.8269 8.60136 13.3986 8.17312 12.8502 8.04145C12.6757 7.99956 12.4788 7.99975 12.2503 7.99997L12.2 8H9.8ZM9.38328 9.01382C9.42632 9.00348 9.49222 9 9.8 9H12.2C12.5078 9 12.5737 9.00348 12.6167 9.01382C12.7995 9.05771 12.9423 9.20045 12.9862 9.38328C12.9965 9.42632 13 9.49222 13 9.8V12.2C13 12.5078 12.9965 12.5737 12.9862 12.6167C12.9423 12.7995 12.7995 12.9423 12.6167 12.9862C12.5737 12.9965 12.5078 13 12.2 13H9.8C9.49222 13 9.42632 12.9965 9.38328 12.9862C9.20045 12.9423 9.05771 12.7995 9.01382 12.6167C9.00348 12.5737 9 12.5078 9 12.2V9.8C9 9.49222 9.00348 9.42632 9.01382 9.38328C9.05771 9.20045 9.20045 9.05771 9.38328 9.01382Z"
+                        fill="#000000"
+                      />
+                    </svg>
+                    <span className="group-hover:text-indigo-500 max-xl:hidden">
+                      Dashboard
+                    </span>
+                  </li>
+                </a>
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
-                  <img className="w-6" src="/people-svgrepo-com.svg" alt="" />
-                  <span className="max-xl:hidden">All Employees</span>
-                </li>
+                <a
+                  className="group flex hover:bg-gradient-to-r from-indigo-50 to-white w-full mb-2"
+                  href=""
+                >
+                  <div className="bar my-auto invisible rounded-full w-1 h-[90%] bg-indigo-400 group-hover:visible"></div>
+                  <li className="flex w-full gap-3 pl-4 leading-[60px] items-center max-xl:py-[0.97rem]">
+                    <svg
+                      fill="#292D32"
+                      className="w-6 h-6 group-hover:fill-indigo-600"
+                      viewBox="0 0 32 32"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
-                  <img
-                    className="w-6"
-                    src="/clipboard-text-svgrepo-com.svg"
-                    alt=""
-                  />
-                  <span className="max-xl:hidden">Checklist</span>
-                </li>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
-                  <img
-                    className="w-6"
-                    src="/dollar-sign-round-svgrepo-com.svg"
-                    alt=""
-                  />
-                  <span className="max-xl:hidden">Payroll</span>
-                </li>
+                      <g id="SVGRepo_iconCarrier">
+                        <path d="M23.313 26.102l-6.296-3.488c2.34-1.841 2.976-5.459 2.976-7.488v-4.223c0-2.796-3.715-5.91-7.447-5.91-3.73 0-7.544 3.114-7.544 5.91v4.223c0 1.845 0.78 5.576 3.144 7.472l-6.458 3.503s-1.688 0.752-1.688 1.689v2.534c0 0.933 0.757 1.689 1.688 1.689h21.625c0.931 0 1.688-0.757 1.688-1.689v-2.534c0-0.994-1.689-1.689-1.689-1.689zM23.001 30.015h-21.001v-1.788c0.143-0.105 0.344-0.226 0.502-0.298 0.047-0.021 0.094-0.044 0.139-0.070l6.459-3.503c0.589-0.32 0.979-0.912 1.039-1.579s-0.219-1.32-0.741-1.739c-1.677-1.345-2.396-4.322-2.396-5.911v-4.223c0-1.437 2.708-3.91 5.544-3.91 2.889 0 5.447 2.44 5.447 3.91v4.223c0 1.566-0.486 4.557-2.212 5.915-0.528 0.416-0.813 1.070-0.757 1.739s0.446 1.267 1.035 1.589l6.296 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.809zM30.312 21.123l-6.39-3.488c2.34-1.841 3.070-5.459 3.070-7.488v-4.223c0-2.796-3.808-5.941-7.54-5.941-2.425 0-4.904 1.319-6.347 3.007 0.823 0.051 1.73 0.052 2.514 0.302 1.054-0.821 2.386-1.308 3.833-1.308 2.889 0 5.54 2.47 5.54 3.941v4.223c0 1.566-0.58 4.557-2.305 5.915-0.529 0.416-0.813 1.070-0.757 1.739 0.056 0.67 0.445 1.267 1.035 1.589l6.39 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.779h-4.037c0.61 0.46 0.794 1.118 1.031 2h3.319c0.931 0 1.688-0.757 1.688-1.689v-2.503c-0.001-0.995-1.689-1.691-1.689-1.691z" />
+                      </g>
+                    </svg>
+                    <span className="group-hover:text-indigo-500 max-xl:hidden">
+                      All Employees
+                    </span>
+                  </li>
+                </a>
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
-                  <img className="w-6" src="/trend-up-svgrepo-com.svg" alt="" />
-                  <span className="max-xl:hidden">Expenses Analytics</span>
-                </li>
+                <a
+                  className="group flex hover:bg-gradient-to-r from-indigo-100 to-white w-full mb-2"
+                  href=""
+                >
+                  <div className="bar my-auto invisible rounded-full w-1 h-[90%] bg-indigo-400 group-hover:visible"></div>
+                  <li className="flex gap-3 pl-4 leading-[60px] items-center max-xl:py-[0.97rem]">
+                    <svg
+                      fill="#000000"
+                      className="w-6 h-6 group-hover:fill-indigo-600"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M17,4H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Z" />
+                    </svg>
+                    <span className="max-xl:hidden group-hover:text-indigo-500">
+                      Checklist
+                    </span>
+                  </li>
+                </a>
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
-                  <img
-                    className="w-6"
-                    src="/percentage-label-svgrepo-com.svg"
-                    alt=""
-                  />
-                  <span className="max-xl:hidden">Tax Advice</span>
-                </li>
+                <a
+                  className="group flex hover:bg-gradient-to-r from-indigo-100 to-white w-full mb-2"
+                  href=""
+                >
+                  <div className="bar my-auto invisible rounded-full w-1 h-[90%] bg-indigo-400 group-hover:visible"></div>
+                  <li className="flex gap-3 pl-4 leading-[60px] items-center max-xl:py-[0.97rem]">
+                    <svg
+                      fill="#292D32"
+                      className="w-6 h-6 group-hover:fill-indigo-600"
+                      viewBox="-1.7 0 20.4 20.4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="cf-icon-svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
-                  <img className="w-6" src="/suitcase-svgrepo-com.svg" alt="" />
-                  <span className="max-xl:hidden">Accounting</span>
-                </li>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
-                  <img
-                    className="w-6"
-                    src="/group-add-people-svgrepo-com.svg"
-                    alt=""
-                  />
-                  <span className="max-xl:hidden">Recruitment</span>
-                </li>
+                      <g id="SVGRepo_iconCarrier">
+                        <path d="M16.417 10.283A7.917 7.917 0 1 1 8.5 2.366a7.916 7.916 0 0 1 7.917 7.917zm-4.844 1.754a2.249 2.249 0 0 0-.556-1.477l-.001-.002a3.02 3.02 0 0 0-.835-.665l-.003-.002a3.498 3.498 0 0 0-.866-.313H9.31a3.78 3.78 0 0 0-.795-.083 2.849 2.849 0 0 1-.475-.037 1.8 1.8 0 0 1-.494-.158l-.002-.001a1.17 1.17 0 0 1-.371-.298L7.172 9a.733.733 0 0 1-.175-.44.749.749 0 0 1 .421-.63 2.157 2.157 0 0 1 1.11-.297 2.283 2.283 0 0 1 .391.066l.049.01a2.479 2.479 0 0 1 .473.166 1.33 1.33 0 0 1 .381.261.792.792 0 1 0 1.118-1.12 2.902 2.902 0 0 0-.85-.585 3.996 3.996 0 0 0-.785-.268h-.001l-.008-.002v-.786a.792.792 0 1 0-1.583 0v.763a3.557 3.557 0 0 0-1.14.454 2.328 2.328 0 0 0-1.159 1.967 2.296 2.296 0 0 0 .529 1.44 2.724 2.724 0 0 0 .894.717 3.342 3.342 0 0 0 .942.305 4.398 4.398 0 0 0 .736.059 2.202 2.202 0 0 1 .46.046 1.927 1.927 0 0 1 .467.168 1.431 1.431 0 0 1 .382.308.674.674 0 0 1 .165.436c0 .097 0 .324-.385.573a2.182 2.182 0 0 1-1.132.314 3.515 3.515 0 0 1-.494-.06 2.381 2.381 0 0 1-.459-.148h-.001a.953.953 0 0 1-.356-.274.792.792 0 1 0-1.197 1.037 2.516 2.516 0 0 0 .967.708 3.799 3.799 0 0 0 .774.237h.007v.783a.792.792 0 1 0 1.583 0v-.79a3.581 3.581 0 0 0 1.17-.479 2.215 2.215 0 0 0 1.107-1.9z" />
+                      </g>
+                    </svg>
+                    <span className="max-xl:hidden group-hover:text-indigo-500">
+                      Payroll
+                    </span>
+                  </li>
+                </a>
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
-                  <img className="w-6" src="/settings-svgrepo-com.svg" alt="" />
-                  <span className="max-xl:hidden">Settings</span>
-                </li>
+                <a
+                  className="group flex hover:bg-gradient-to-r from-indigo-100 to-white w-full mb-2"
+                  href=""
+                >
+                  <div className="bar my-auto invisible rounded-full w-1 h-[90%] bg-indigo-400 group-hover:visible"></div>
+                  <li className="flex gap-3 pl-4 leading-[60px] items-center max-xl:py-[0.97rem]">
+                    <svg
+                      className="w-6 h-6"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
-                <li className="flex gap-3 pl-5 leading-[51px] mb-2 items-center max-xl:py-3.5 max-xl:pl-0">
-                  <img
-                    className="w-6"
-                    src="/headphones-alt-2-svgrepo-com.svg"
-                    alt=""
-                  />
-                  <span className="max-xl:hidden">Help & Support</span>
-                </li>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M5 5C5 4.44772 4.55228 4 4 4C3.44772 4 3 4.44772 3 5L3 13.9998C3 13.9999 3 14.0001 3 14.0002V19C3 19.5523 3.44772 20 4 20H20C20.5523 20 21 19.5523 21 19C21 18.4477 20.5523 18 20 18H5V14.4142L9 10.4142L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071L19 8.41421V11C19 11.5523 19.4477 12 20 12C20.5523 12 21 11.5523 21 11V6C21 5.44772 20.5523 5 20 5H15C14.4477 5 14 5.44772 14 6C14 6.55228 14.4477 7 15 7H17.5858L13 11.5858L9.70711 8.29289C9.31658 7.90237 8.68342 7.90237 8.29289 8.29289L5 11.5858V5Z"
+                          fill="#292D32"
+                          className="group-hover:fill-indigo-500"
+                        />
+                      </g>
+                    </svg>
+                    <span className="max-xl:hidden group-hover:text-indigo-500">
+                      Expenses Analytics
+                    </span>
+                  </li>
+                </a>
+
+                <a
+                  className="group flex hover:bg-gradient-to-r from-indigo-100 to-white w-full mb-2"
+                  href=""
+                >
+                  <div className="bar my-auto invisible rounded-full w-1 h-[90%] bg-indigo-400 group-hover:visible"></div>
+                  <li className="flex gap-3 pl-4 leading-[60px] items-center max-xl:py-[0.97rem]">
+                    <svg
+                      fill="#292D32"
+                      version="1.1"
+                      id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      className="w-6 h-6 group-hover:fill-indigo-500"
+                      viewBox="0 0 606.492 606.492"
+                      xml:space="preserve"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <g id="SVGRepo_iconCarrier">
+                        <g>
+                          <path d="M606.492,303.246l-86.598-70.38l28.702-107.896l-111.506-5.998L397.005,14.749l-93.759,60.772l-93.758-60.772 l-40.086,104.224l-111.506,5.998l28.703,107.896L0,303.246l86.598,70.38L57.896,481.521l111.506,5.998l40.086,104.224 l93.758-60.771l93.759,60.771l40.086-104.224l111.506-5.998l-28.702-107.896L606.492,303.246z M407.959,447.372l-31.396,81.519 l-73.317-47.491l-73.317,47.552l-31.396-81.518l-87.271-4.651l22.521-84.456l-67.749-55.08l67.749-55.08l-22.46-84.395 l87.271-4.651l31.396-81.519l73.256,47.491l73.317-47.552l31.396,81.519l87.271,4.651l-22.521,84.456l67.748,55.08l-67.748,55.08 l22.46,84.395L407.959,447.372z M412.06,223.87L223.87,412.06l-29.437-29.438l188.189-188.189L412.06,223.87z M239.782,291.251 c28.397,0,51.469-23.072,51.469-51.469s-23.072-51.469-51.469-51.469s-51.469,23.072-51.469,51.469 S211.446,291.251,239.782,291.251z M239.782,229.929c5.447,0,9.853,4.406,9.853,9.853s-4.406,9.853-9.853,9.853 s-9.853-4.406-9.853-9.853S234.335,229.929,239.782,229.929z M366.711,315.241c-28.397,0-51.47,23.072-51.47,51.47 c0,28.396,23.072,51.469,51.47,51.469c28.396,0,51.469-23.072,51.469-51.469C418.18,338.313,395.046,315.241,366.711,315.241z M366.711,376.563c-5.447,0-9.854-4.406-9.854-9.853c0-5.447,4.406-9.854,9.854-9.854c5.446,0,9.853,4.406,9.853,9.854 C376.563,372.157,372.157,376.563,366.711,376.563z" />
+                        </g>
+                      </g>
+                    </svg>
+                    <span className="max-xl:hidden group-hover:text-indigo-500">
+                      Tax Advice
+                    </span>
+                  </li>
+                </a>
+
+                <a
+                  className="group flex hover:bg-gradient-to-r from-indigo-100 to-white w-full mb-2"
+                  href=""
+                >
+                  <div className="bar my-auto invisible rounded-full w-1 h-[90%] bg-indigo-400 group-hover:visible"></div>
+                  <li className="flex gap-3 pl-4 leading-[60px] items-center max-xl:py-[0.97rem]">
+                    <svg
+                      className="w-6 h-6"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          opacity="0.15"
+                          d="M4 8C4 6.89543 4.89543 6 6 6H18C19.1046 6 20 6.89543 20 8V12C20 13.1046 19.1046 14 18 14H6C4.89543 14 4 13.1046 4 12V8Z"
+                          fill="#292D32"
+                        />
+                        <path
+                          d="M12 14V12M12 14V16M12 14H18C19.1046 14 20 13.1046 20 12M12 14H6C4.89543 14 4 13.1046 4 12M20 12V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V12M20 12V8C20 6.89543 19.1046 6 18 6H6C4.89543 6 4 6.89543 4 8V12M15 6V5C15 3.89543 14.1046 3 13 3H11C9.89543 3 9 3.89543 9 5V6"
+                          stroke="#292D32"
+                          className="group-hover:stroke-indigo-500"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                    <span className="max-xl:hidden group-hover:text-indigo-500">
+                      Accounting
+                    </span>
+                  </li>
+                </a>
+
+                <a
+                  className="group flex hover:bg-gradient-to-r from-indigo-100 to-white w-full mb-2"
+                  href=""
+                >
+                  <div className="bar my-auto invisible rounded-full w-1 h-[90%] bg-indigo-400 group-hover:visible"></div>
+                  <li className="flex gap-3 pl-4 leading-[60px] items-center max-xl:py-[0.97rem]">
+                    <svg
+                      className="w-6 h-6"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.83333 11.8333C8.44167 11.8333 9.75 10.525 9.75 8.91667C9.75 7.30833 8.44167 6 6.83333 6C5.225 6 3.91667 7.30833 3.91667 8.91667C3.91667 10.525 5.225 11.8333 6.83333 11.8333ZM21 15.3333V12.8333H23.5V11.1667H21V8.66666H19.3333V11.1667H16.8333V12.8333H19.3333V15.3333H21ZM6.83333 13.2917C4.88333 13.2917 1 14.2667 1 16.2083V17.6667H12.6667V16.2083C12.6667 14.2667 8.78333 13.2917 6.83333 13.2917ZM6.83333 14.9583C5.34166 14.9583 3.65 15.5167 2.95 16H10.7167C10.0167 15.5167 8.325 14.9583 6.83333 14.9583ZM8.08333 8.91667C8.08333 8.225 7.525 7.66667 6.83333 7.66667C6.14167 7.66667 5.58333 8.225 5.58333 8.91667C5.58333 9.60833 6.14167 10.1667 6.83333 10.1667C7.525 10.1667 8.08333 9.60833 8.08333 8.91667ZM11 11.8333C12.6083 11.8333 13.9167 10.525 13.9167 8.91667C13.9167 7.30833 12.6083 6 11 6C10.8 6 10.6 6.01667 10.4083 6.05833C11.0417 6.84167 11.4167 7.83333 11.4167 8.91667C11.4167 10 11.025 10.9833 10.3917 11.7667C10.5917 11.8083 10.7917 11.8333 11 11.8333ZM14.3333 16.2083C14.3333 15.075 13.7667 14.1917 12.9333 13.5167C14.8 13.9083 16.8333 14.8 16.8333 16.2083V17.6667H14.3333V16.2083Z"
+                          fill="#292D32"
+                          className="group-hover:fill-indigo-500"
+                        />
+                      </g>
+                    </svg>
+                    <span className="max-xl:hidden group-hover:text-indigo-500">
+                      Recruitement
+                    </span>
+                  </li>
+                </a>
+
+                <a
+                  className="group flex hover:bg-gradient-to-r from-indigo-100 to-white w-full mb-2"
+                  href=""
+                >
+                  <div className="bar my-auto invisible rounded-full w-1 h-[90%] bg-indigo-400 group-hover:visible"></div>
+                  <li className="flex gap-3 pl-4 leading-[60px] items-center max-xl:py-[0.97rem]">
+                    <svg
+                      className="w-6 h-6"
+                      viewBox="0 0 30 30"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                      fill="#292D32"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <g id="SVGRepo_iconCarrier">
+                        <title>settings</title>
+                        <desc>Created with Sketch Beta.</desc> <defs> </defs>
+                        <g
+                          id="Page-1"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                          sketch:type="MSPage"
+                        >
+                          <g
+                            id="Icon-Set"
+                            sketch:type="MSLayerGroup"
+                            transform="translate(-101.000000, -360.000000)"
+                            fill="#292D32"
+                            className="group-hover:fill-indigo-500"
+                          >
+                            <path
+                              d="M128.52,381.134 L127.528,382.866 C127.254,383.345 126.648,383.508 126.173,383.232 L123.418,381.628 C122.02,383.219 120.129,384.359 117.983,384.799 L117.983,387 C117.983,387.553 117.54,388 116.992,388 L115.008,388 C114.46,388 114.017,387.553 114.017,387 L114.017,384.799 C111.871,384.359 109.98,383.219 108.582,381.628 L105.827,383.232 C105.352,383.508 104.746,383.345 104.472,382.866 L103.48,381.134 C103.206,380.656 103.369,380.044 103.843,379.769 L106.609,378.157 C106.28,377.163 106.083,376.106 106.083,375 C106.083,373.894 106.28,372.838 106.609,371.843 L103.843,370.232 C103.369,369.956 103.206,369.345 103.48,368.866 L104.472,367.134 C104.746,366.656 105.352,366.492 105.827,366.768 L108.582,368.372 C109.98,366.781 111.871,365.641 114.017,365.201 L114.017,363 C114.017,362.447 114.46,362 115.008,362 L116.992,362 C117.54,362 117.983,362.447 117.983,363 L117.983,365.201 C120.129,365.641 122.02,366.781 123.418,368.372 L126.173,366.768 C126.648,366.492 127.254,366.656 127.528,367.134 L128.52,368.866 C128.794,369.345 128.631,369.956 128.157,370.232 L125.391,371.843 C125.72,372.838 125.917,373.894 125.917,375 C125.917,376.106 125.72,377.163 125.391,378.157 L128.157,379.769 C128.631,380.044 128.794,380.656 128.52,381.134 L128.52,381.134 Z M130.008,378.536 L127.685,377.184 C127.815,376.474 127.901,375.749 127.901,375 C127.901,374.252 127.815,373.526 127.685,372.816 L130.008,371.464 C130.957,370.912 131.281,369.688 130.733,368.732 L128.75,365.268 C128.203,364.312 126.989,363.983 126.041,364.536 L123.694,365.901 C122.598,364.961 121.352,364.192 119.967,363.697 L119.967,362 C119.967,360.896 119.079,360 117.983,360 L114.017,360 C112.921,360 112.033,360.896 112.033,362 L112.033,363.697 C110.648,364.192 109.402,364.961 108.306,365.901 L105.959,364.536 C105.011,363.983 103.797,364.312 103.25,365.268 L101.267,368.732 C100.719,369.688 101.044,370.912 101.992,371.464 L104.315,372.816 C104.185,373.526 104.099,374.252 104.099,375 C104.099,375.749 104.185,376.474 104.315,377.184 L101.992,378.536 C101.044,379.088 100.719,380.312 101.267,381.268 L103.25,384.732 C103.797,385.688 105.011,386.017 105.959,385.464 L108.306,384.099 C109.402,385.039 110.648,385.809 112.033,386.303 L112.033,388 C112.033,389.104 112.921,390 114.017,390 L117.983,390 C119.079,390 119.967,389.104 119.967,388 L119.967,386.303 C121.352,385.809 122.598,385.039 123.694,384.099 L126.041,385.464 C126.989,386.017 128.203,385.688 128.75,384.732 L130.733,381.268 C131.281,380.312 130.957,379.088 130.008,378.536 L130.008,378.536 Z M116,378 C114.357,378 113.025,376.657 113.025,375 C113.025,373.344 114.357,372 116,372 C117.643,372 118.975,373.344 118.975,375 C118.975,376.657 117.643,378 116,378 L116,378 Z M116,370 C113.261,370 111.042,372.238 111.042,375 C111.042,377.762 113.261,380 116,380 C118.739,380 120.959,377.762 120.959,375 C120.959,372.238 118.739,370 116,370 L116,370 Z"
+                              id="settings"
+                              sketch:type="MSShapeGroup"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    <span className="max-xl:hidden group-hover:text-indigo-500">
+                      Settings
+                    </span>
+                  </li>
+                </a>
+
+                <a
+                  className="group flex hover:bg-gradient-to-r from-indigo-100 to-white w-full mb-2"
+                  href=""
+                >
+                  <div className="bar my-auto invisible rounded-full w-1 h-[90%] bg-indigo-400 group-hover:visible"></div>
+                  <li className="flex gap-3 pl-4 leading-[60px] items-center max-xl:py-[0.97rem]">
+                    <svg
+                      className="w-6 h-6"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      stroke="#292D32"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M3 11.3C3 6.32949 7.02944 2.30005 12 2.30005C16.9706 2.30005 21 6.32949 21 11.3M3 11.3H5C6.10457 11.3 7 12.1955 7 13.3V15.3C7 16.4046 6.10457 17.3 5 17.3M3 11.3V16.3C3 16.8523 3.44772 17.3 4 17.3H5M21 11.3H19C17.8954 11.3 17 12.1955 17 13.3V15.3C17 16.4046 17.8954 17.3 19 17.3H20C20.5523 17.3 21 16.8523 21 16.3V11.3ZM5 17.3V18.3C5 19.4046 5.89543 20.3 7 20.3H9M9 20.3C9 21.1285 9.67157 21.8 10.5 21.8H11.5C12.3284 21.8 13 21.1285 13 20.3C13 19.4716 12.3284 18.8 11.5 18.8H10.5C9.67157 18.8 9 19.4716 9 20.3Z"
+                          className="group-hover:stroke-indigo-500"
+                          stroke="#292D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </g>
+                    </svg>
+                    <span className="max-xl:hidden group-hover:text-indigo-500">
+                      Help & Support
+                    </span>
+                  </li>
+                </a>
               </ul>
 
               <div className="bottom">
@@ -136,7 +413,10 @@ function App() {
                       enhance your security.
                     </p>
 
-                    <div className="flex gap-3 justify-center items-center py-3 px-10 bg-violet-600 rounded-lg">
+                    <a
+                      href=""
+                      className="group flex gap-3 justify-center items-center py-3 px-10 bg-violet-600 rounded-lg hover:bg-violet-500"
+                    >
                       <span className="text-xs text-white whitespace-nowrap">
                         Upgrade Pro
                       </span>
@@ -145,24 +425,50 @@ function App() {
                         src="/right-arrow-svgrepo-com.svg"
                         alt=""
                       />
-                    </div>
+                    </a>
                   </div>
                 </div>
 
-                <div className="logout flex gap-3 items-center mx-5 w-fit">
-                  <img
-                    src="/log-out-02-svgrepo-com.svg"
-                    className="w-7"
-                    alt=""
-                  />
-                  <span className="max-xl:hidden">Log Out</span>
-                </div>
+                <a
+                  href=""
+                  className="group logout ps-5 rounded-xl h-fit flex gap-3 items-center leading-[50px] hover:bg-red-50"
+                >
+                  <svg
+                    className="w-6 h-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M16 17L21 12M21 12L16 7M21 12H9M12 17C12 17.93 12 18.395 11.8978 18.7765C11.6204 19.8117 10.8117 20.6204 9.77646 20.8978C9.39496 21 8.92997 21 8 21H7.5C6.10218 21 5.40326 21 4.85195 20.7716C4.11687 20.4672 3.53284 19.8831 3.22836 19.1481C3 18.5967 3 17.8978 3 16.5V7.5C3 6.10217 3 5.40326 3.22836 4.85195C3.53284 4.11687 4.11687 3.53284 4.85195 3.22836C5.40326 3 6.10218 3 7.5 3H8C8.92997 3 9.39496 3 9.77646 3.10222C10.8117 3.37962 11.6204 4.18827 11.8978 5.22354C12 5.60504 12 6.07003 12 7"
+                        stroke="#292D32"
+                        className="group-hover:stroke-red-600"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+
+                  <span className="max-xl:hidden group-hover:text-red-600">
+                    Log Out
+                  </span>
+                </a>
               </div>
             </div>
           </nav>
 
           <div className="right min-h-fit w-full col-span-6 col-start-2">
-            <header className="header w-[full] flex items-center border-b-2 border-gray-300 px-7 py-5 justify-between max-lg:py-4">
+            <header className="header w-[full] flex items-center border-b-2 border-gray-300 px-7 py-5 justify-between">
               <label htmlFor="check" className="menu h-fit md:hidden">
                 <img className="w-10 my-auto" src="/burger-menu.svg" alt="" />
               </label>
@@ -236,22 +542,21 @@ function App() {
               </div>
 
               <div className="big-head flex justify-between w-full max-md:justify-end">
-                <div className="border-2 rounded-xl inline-flex items-center gap-3 ps-3.5 py-2.5 pe-36 max-md:hidden max-lg:p-3.5">
+                <div className="border-2 rounded-lg flex items-center gap-3 px-3.5 py-2.5 max-md:hidden hover:border-indigo-200">
                   <img
                     className="w-6"
                     src="/search-alt-svgrepo-com.svg"
                     alt=""
                   />
-                  <span
-                    className="text-gray-400 max-lg:hidden
-              "
-                  >
-                    Search something here
-                  </span>
+                  <input
+                    className="w-[287px] text-gray-500 outline-none max-[856px]:w-fit"
+                    type="text"
+                    placeholder="Search something here"
+                  />
                 </div>
 
                 <div className="flex gap-8 max-md:gap-3">
-                  <div className="flex items-center py-1 px-2.5 border-2 rounded-full max-lg:px-3.5 max-md:px-2.5">
+                  <div className="flex items-center py-1 px-2.5 border-2 rounded-full  max-md:px-2.5">
                     <img
                       className="w-6"
                       src="/notification-svgrepo-com.svg"
