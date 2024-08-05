@@ -318,8 +318,7 @@ function App() {
                       />
 
                       <g id="SVGRepo_iconCarrier">
-                        <title>settings</title>
-                        <desc>Created with Sketch Beta.</desc> <defs> </defs>
+                        <defs> </defs>
                         <g
                           id="Page-1"
                           stroke="none"
@@ -495,107 +494,190 @@ function App() {
             </div>
           </nav>
 
+          <input className="md:hidden" type="checkbox" id="check" />
+          <div className="mobile-drop fixed flex h-screen w-screen z-10">
+            <div className="w-[40%] h-full overflow-y-scroll border-gray-300 py-5 px-6 text-center left-0 top-0 bg-white shadow-lg w-screen text-sm">
+              <div className="w-full flex gap-3 items-center mt-2 mb-14">
+                <img
+                  className="h-6 w-6"
+                  src="/dashboard-layout-svgrepo-com.svg"
+                  alt=""
+                />
+                <h1 className="font-bold text-2xl">PayTide</h1>
+              </div>
+
+              <ul className="flex flex-col justify-center gap-12">
+                <a href="">
+                  <li>
+                    <div className="flex items-center gap-3">
+                      <img
+                        className="w-5"
+                        src="/dashboard-svgrepo-com.svg"
+                        alt=""
+                      />
+                      Dashboard
+                    </div>
+                  </li>
+                </a>
+
+                <a href="">
+                  <li>
+                    <div className="flex items-center gap-3">
+                      <img
+                        className="w-5"
+                        src="/people-svgrepo-com.svg    "
+                        alt=""
+                      />
+                      All Employees
+                    </div>
+                  </li>
+                </a>
+
+                <a href="">
+                  <li>
+                    <div className="flex items-center gap-3">
+                      <img
+                        className="w-5"
+                        src="/clipboard-text-svgrepo-com.svg  "
+                        alt=""
+                      />
+                      Checklist
+                    </div>
+                  </li>
+                </a>
+
+                <a href="">
+                  <li>
+                    <div className="flex items-center gap-3">
+                      <img
+                        className="w-5"
+                        src="/dollar-sign-round-svgrepo-com.svg"
+                        alt=""
+                      />
+                      Payroll
+                    </div>
+                  </li>
+                </a>
+
+                <a href="">
+                  <li>
+                    <div className="flex items-center gap-3">
+                      <img
+                        className="w-5"
+                        src="/trend-up-svgrepo-com.svg"
+                        alt=""
+                      />
+                      Expenses Analytics
+                    </div>
+                  </li>
+                </a>
+
+                <a href="">
+                  <li>
+                    <div className="flex items-center gap-3">
+                      <img
+                        className="w-5"
+                        src="/percentage-label-svgrepo-com.svg"
+                        alt=""
+                      />
+                      Tax Advice
+                    </div>
+                  </li>
+                </a>
+
+                <a href="">
+                  <li>
+                    <div className="flex items-center gap-3">
+                      <img
+                        className="w-5"
+                        src="/suitcase-svgrepo-com.svg"
+                        alt=""
+                      />
+                      Accounting
+                    </div>
+                  </li>
+                </a>
+
+                <a href="">
+                  <li>
+                    <div className="flex items-center gap-3">
+                      <img
+                        className="w-5"
+                        src="/group-add-people-svgrepo-com.svg"
+                        alt=""
+                      />
+                      Recruitement
+                    </div>
+                  </li>
+                </a>
+
+                <a href="">
+                  <li>
+                    <div className="flex items-center gap-3">
+                      <img
+                        className="w-5"
+                        src="/settings-svgrepo-com.svg"
+                        alt=""
+                      />
+                      Settings
+                    </div>
+                  </li>
+                </a>
+
+                <a href="">
+                  <li>
+                    <div className="flex items-center gap-3">
+                      <img
+                        className="w-5"
+                        src="/headphones-alt-2-svgrepo-com.svg  "
+                        alt=""
+                      />
+                      Help & Support
+                    </div>
+                  </li>
+                </a>
+              </ul>
+            </div>
+
+            <a href="" className="touch w-full h-full"></a>
+          </div>
+
           <div className="right min-h-fit w-full col-span-6 col-start-2">
             <header className="header w-[full] flex items-center border-b-2 border-gray-300 px-7 py-5 justify-between">
               <label htmlFor="check" className="menu h-fit md:hidden">
                 <img className="w-10 my-auto" src="/burger-menu.svg" alt="" />
               </label>
 
-              <input className="md:hidden" type="checkbox" id="check" />
-              <div className="mobile-drop overflow-y-scroll border-gray-300 py-5 px-8 h-screen text-center fixed left-0 top-0 bg-white shadow-lg z-10 w-[75%] max-[425px]:text-xs">
-                <label htmlFor="check" className="menu">
-                  <img className="w-8 mb-10" src="/close.svg" alt="" />
-                </label>
-
-                <ul className="flex flex-col justify-center gap-14">
-                  <li>
-                    <div className="flex items-center gap-3 mb-3">
-                      <img
-                        className="w-7"
-                        src="/people-svgrepo-com.svg"
-                        alt=""
-                      />
-                      All Employees
-                    </div>
-                    <div className="seperator border-[1px]"></div>
-                  </li>
-
-                  <li>
-                    <div className="flex items-center gap-3 mb-3">
-                      <img
-                        className="w-7"
-                        src="/clipboard-text-svgrepo-com.svg  "
-                        alt=""
-                      />
-                      Checklist
-                    </div>
-                    <div className="seperator border-[1px]"></div>
-                  </li>
-
-                  <li>
-                    <div className="flex items-center gap-3 mb-3">
-                      <img
-                        className="w-7"
-                        src="/trend-up-svgrepo-com.svg"
-                        alt=""
-                      />
-                      Expense Analytics
-                    </div>
-                    <div className="seperator border-[1px]"></div>
-                  </li>
-
-                  <li>
-                    <div className="flex items-center gap-3 mb-3">
-                      <img
-                        className="w-7"
-                        src="/group-add-people-svgrepo-com.svg"
-                        alt=""
-                      />
-                      Recruitment
-                    </div>
-                    <div className="seperator border-[1px]"></div>
-                  </li>
-
-                  <li>
-                    <div className="flex items-center gap-3 mb-3">
-                      <img
-                        className="w-7"
-                        src="/log-out-02-svgrepo-com.svg  "
-                        alt=""
-                      />
-                      Log Out
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
               <div className="big-head flex justify-between w-full max-md:justify-end">
-                <div className="border-2 rounded-lg flex items-center gap-3 px-3.5 py-2.5 max-md:hidden hover:border-indigo-200">
+                <div className="transition-all duration-100 border-2 rounded-lg flex items-center gap-3 px-3.5 py-2.5 max-md:hidden hover:border-violet-400">
                   <img
                     className="w-6"
                     src="/search-alt-svgrepo-com.svg"
                     alt=""
                   />
                   <input
-                    className="w-[287px] text-gray-500 outline-none max-[856px]:w-fit"
+                    className="w-[287px] leading-5 flex justify-center text-gray-500 outline-none max-[856px]:w-fit"
                     type="text"
                     placeholder="Search something here"
                   />
                 </div>
 
                 <div className="flex gap-8 max-md:gap-3">
-                  <div className="flex items-center py-1 px-2.5 border-2 rounded-full  max-md:px-2.5">
+                  <a
+                    href=""
+                    className="transition-all duration-100 flex items-center py-1 px-2.5 border-2 rounded-full max-md:px-2.5 hover:border-violet-500"
+                  >
                     <img
                       className="w-6"
                       src="/notification-svgrepo-com.svg"
                       alt=""
                     />
-                  </div>
+                  </a>
 
                   <div className="seperator border-[1px]"></div>
 
                   <div className="group flex gap-1">
-                    <div className="flex relative gap-2 items-center">
+                    <a href="" className="flex relative gap-2 items-center">
                       <img
                         src="/Daco_4205588.png"
                         className="w-12 h-12"
@@ -611,7 +693,7 @@ function App() {
 
                       <a
                         href=""
-                        className="dropdown flex items-center gap-2 opacity-0 translate-y-[50px] transition-all duration-100 drop-shadow-sm rounded-lg group-hover:opacity-100 fixed p-4 bg-gray-100"
+                        className="dropdown flex items-center gap-2 opacity-0 translate-y-[50px] transition-all duration-100 drop-shadow-sm rounded-lg group-hover:opacity-100 fixed p-4 bg-gray-100 max-md:hidden"
                       >
                         <img
                           className="w-5 h-5"
@@ -620,7 +702,7 @@ function App() {
                         />
                         Manage your accounts
                       </a>
-                    </div>
+                    </a>
 
                     <img
                       src="/down-arrow-5-svgrepo-com.svg  "
@@ -642,13 +724,41 @@ function App() {
                     </span>
                   </h2>
 
-                  <div className="button h-fit rounded-xl py-3.5 px-7 flex gap-2 items-center justify-center bg-violet-600 max-md:p-4">
-                    <span className="text-white max-md:hidden">
+                  <a
+                    href=""
+                    className="group h-fit flex gap-3 justify-center items-center py-3 px-10 bg-violet-600 rounded-xl py-3.5 px-7 hover:bg-transparent hover:border-2 hover:border-violet-600 hover:py-3 hover:px-[1.6rem] max-md:p-3.5 max-md:hover:p-3"
+                  >
+                    <span className=" text-white whitespace-nowrap group-hover:text-black max-md:hidden">
                       Create Reports
                     </span>
-                    <img src="/plus-svgrepo-com.svg " className="w-6" alt="" />
-                  </div>
+                    <svg
+                      className="w-6 h-6"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M6 12H18M12 6V18"
+                          stroke="#ffffff"
+                          className="group-hover:stroke-black"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                    </svg>
+                  </a>
                 </div>
+
                 <div className="cards mt-9">
                   <div className="top grid grid-cols-4 grid-rows-1 gap-4 max-[1024px]:grid-cols-2">
                     <div className="balance flex flex-col gap-3 bg-white p-5 rounded-xl">
@@ -927,7 +1037,7 @@ function App() {
                   <div className="bottom mt-8 grid grid-cols-3 grid-rows-3 gap-6 max-md:grid-cols-1 max-xl:grid-rows-2 max-xl:grid-cols-2">
                     <div className="list bg-white py-5 px-7 rounded-xl col-span-2 row-span-3 flex flex-col justify-around max-xl:hidden">
                       <div className="head flex justify-between items-center">
-                        <div className="h-fit border-2 rounded-xl flex items-center gap-3 px-3.5 py-2.5 max-md:hidden hover:border-indigo-200">
+                        <div className="transition-all duration-100 h-fit border-2 rounded-xl flex items-center gap-3 px-3.5 py-2.5 max-md:hidden hover:border-violet-400">
                           <img
                             className="w-6"
                             src="/search-alt-svgrepo-com.svg"

@@ -17,7 +17,7 @@
 }
 
 #check:checked ~ .mobile-drop {
-  display: block;
+  display: flex;
 }
 
 ::-webkit-scrollbar {
