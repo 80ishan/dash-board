@@ -168,7 +168,7 @@ function App() {
               </label>
 
               <input className="md:hidden" type="checkbox" id="check" />
-              <div className="mobile-drop overflow-y-scroll md: hidden border-gray-300 py-5 px-8 h-screen text-center fixed left-0 top-0 bg-white shadow-lg z-10 w-[75%] max-[425px]:text-xs">
+              <div className="mobile-drop overflow-y-scroll border-gray-300 py-5 px-8 h-screen text-center fixed left-0 top-0 bg-white shadow-lg z-10 w-[75%] max-[425px]:text-xs">
                 <label htmlFor="check" className="menu">
                   <img className="w-8 mb-10" src="/close.svg" alt="" />
                 </label>
