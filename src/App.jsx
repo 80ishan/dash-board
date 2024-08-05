@@ -163,23 +163,17 @@ function App() {
 
           <div className="right min-h-fit w-full col-span-6 col-start-2">
             <header className="header w-[full] flex items-center border-b-2 border-gray-300 px-7 py-5 justify-between max-lg:py-4">
-              <label htmlFor="check" className="menu h-fit">
-                <img
-                  className="w-10 md:hidden my-auto"
-                  src="/burger-menu.svg"
-                  alt=""
-                />
+              <label htmlFor="check" className="menu h-fit md:hidden">
+                <img className="w-10 my-auto" src="/burger-menu.svg" alt="" />
               </label>
 
-              <input type="checkbox" id="check" />
-              <div className="mobile-drop border-gray-300 py-5 px-8 h-screen text-center fixed left-0 top-0 bg-white shadow-lg z-10 w-[75%] max-[425px]:text-xs">
-                <div className="top flex justify-between">
-                  <label htmlFor="check" className="menu">
-                    <img className="w-8" src="/close.svg" alt="" />
-                  </label>
-                </div>
+              <input className="md:hidden" type="checkbox" id="check" />
+              <div className="mobile-drop overflow-y-scroll md: hidden border-gray-300 py-5 px-8 h-screen text-center fixed left-0 top-0 bg-white shadow-lg z-10 w-[75%] max-[425px]:text-xs">
+                <label htmlFor="check" className="menu">
+                  <img className="w-8 mb-10" src="/close.svg" alt="" />
+                </label>
 
-                <ul className="flex flex-col justify-center gap-14 h-[80%]">
+                <ul className="flex flex-col justify-center gap-14">
                   <li>
                     <div className="flex items-center gap-3 mb-3">
                       <img
