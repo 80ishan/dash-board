@@ -761,7 +761,7 @@ function App() {
 
                   <a
                     href=""
-                    className="group h-fit flex gap-3 justify-center items-center py-3 px-10 bg-violet-600 rounded-xl py-3.5 px-7 max-md:p-3.5 max-md:hover:p-3 hover:bg-violet-500"
+                    className="group h-fit flex gap-3 justify-center items-center py-3 px-10 bg-violet-600 rounded-xl py-3.5 px-7 max-md:p-3.5 hover:bg-violet-500"
                   >
                     <span className=" text-white whitespace-nowrap max-md:hidden">
                       Create Reports
