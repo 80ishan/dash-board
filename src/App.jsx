@@ -1068,7 +1068,7 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="bottom mt-8 grid grid-cols-3 grid-rows-3 gap-6 max-md:grid-cols-1 max-xl:grid-rows-2 max-xl:grid-cols-2 max-md:grid-rows-3">
+                  <div className="bottom mt-8 grid grid-cols-3 grid-rows-3 gap-6 max-md:grid-cols-1 max-xl:grid-rows-2 max-xl:grid-cols-2 max-md:grid-rows-2 max-md:mb-20">
                     <div className="list bg-white py-5 px-7 rounded-xl col-span-2 row-span-3 flex flex-col justify-around max-xl:hidden">
                       <div className="head flex justify-between items-center">
                         <div className="transition-all duration-100 h-fit border-2 rounded-xl flex items-center gap-3 px-3.5 py-2.5 max-md:hidden hover:border-violet-400">
