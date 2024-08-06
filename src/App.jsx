@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <div className="container relative min-h-fit max-w-full">
+      <div className="container font-medium relative min-h-fit max-w-full">
         <div className="container-inner relative flex items-start">
           <header className="bottom-mobile fixed bottom-0 px-10 z-10 bg-white w-screen shadow-[0_-35px_60px_-15px_rgba(0,0,0,0.1)] md:hidden max-[425px]:px-6">
             <ul className="pt-4 flex justify-between">
@@ -16,7 +16,7 @@ function App() {
                   src="/dollar-sign-round-svgrepo-com.svg"
                   alt=""
                 />
-                <span className="max-[375px]:hidden">Payroll</span>
+                <span className="max-[375px]:hidden     ">Payroll</span>
               </li>
 
               <li className="leading-[35px] flex flex-col mb-3 mt-1 items-center max-[375px]:mb-5">
@@ -35,14 +35,16 @@ function App() {
             </ul>
           </header>
 
-          <nav className="navbar overflow-y-scroll scroll top-0 sticky h-screen max-w-fit border-r-2 border-gray-300 max-md:hidden">
-            <div className="flex gap-3 items-center ps-6 py-7 pe-28 border-b-2 border-gray-300 max-w-fit max-xl:pe-6 max-xl:py-8">
-              <img
-                className="h-6 w-7"
-                src="/dashboard-layout-svgrepo-com.svg"
-                alt=""
-              />
-              <h1 className="font-bold text-2xl max-xl:hidden">PayTide</h1>
+          <nav className="navbar overflow-y-scroll scroll top-0 sticky h-screen w-[300px] border-r-2 border-gray-300 max-md:hidden max-[1280px]:max-w-fit">
+            <div className="top">
+              <div className="flex max-w-full ps-6 py-7 pe-20 gap-3 items-center border-b-2 border-gray-300 max-xl:pe-6 max-xl:py-8">
+                <img
+                  className="h-6 w-6"
+                  src="/dashboard-layout-svgrepo-com.svg"
+                  alt=""
+                />
+                <h1 className="font-bold text-2xl max-xl:hidden">PayTide</h1>
+              </div>
             </div>
 
             <div className="main flex flex-col justify-between h-[90%]">
@@ -403,9 +405,9 @@ function App() {
 
                     <a
                       href=""
-                      className="group flex gap-3 justify-center items-center py-3 px-10 bg-violet-600 rounded-lg hover:bg-transparent hover:border-2 hover:border-violet-600 hover:py-2.5 hover:px-[2.35rem]"
+                      className="group flex gap-3 justify-center items-center py-3 px-10 bg-violet-600 rounded-lg hover:bg-violet-500"
                     >
-                      <span className="text-xs text-white whitespace-nowrap group-hover:text-black">
+                      <span className="text-xs text-white whitespace-nowrap">
                         Upgrade Pro
                       </span>
                       <svg
@@ -433,7 +435,6 @@ function App() {
                             fill-rule="evenodd"
                           >
                             <g
-                              className="group-hover:fill-black"
                               id="ui-gambling-website-lined-icnos-casinoshunter"
                               transform="translate(-212.000000, -159.000000)"
                               fill="#ffffff"
@@ -637,6 +638,40 @@ function App() {
                   </li>
                 </a>
               </ul>
+              <div className="logout h-[24%] w-full flex items-end">
+                <a
+                  href=""
+                  className="group w-full logout rounded-xl h-fit flex gap-3 items-center leading-[50px] hover:bg-red-50"
+                >
+                  <svg
+                    className="w-6 h-6"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M16 17L21 12M21 12L16 7M21 12H9M12 17C12 17.93 12 18.395 11.8978 18.7765C11.6204 19.8117 10.8117 20.6204 9.77646 20.8978C9.39496 21 8.92997 21 8 21H7.5C6.10218 21 5.40326 21 4.85195 20.7716C4.11687 20.4672 3.53284 19.8831 3.22836 19.1481C3 18.5967 3 17.8978 3 16.5V7.5C3 6.10217 3 5.40326 3.22836 4.85195C3.53284 4.11687 4.11687 3.53284 4.85195 3.22836C5.40326 3 6.10218 3 7.5 3H8C8.92997 3 9.39496 3 9.77646 3.10222C10.8117 3.37962 11.6204 4.18827 11.8978 5.22354C12 5.60504 12 6.07003 12 7"
+                        stroke="#292D32"
+                        className="group-hover:stroke-red-600"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+
+                  <span className="group-hover:text-red-600">Log Out</span>
+                </a>
+              </div>
             </div>
 
             <a href="" className="touch w-full h-full"></a>
@@ -656,7 +691,7 @@ function App() {
                     alt=""
                   />
                   <input
-                    className="w-[287px] leading-5 flex justify-center text-gray-500 outline-none max-[856px]:w-fit"
+                    className="w-[287px] leading-5 flex justify-center text-gray-400 outline-none max-[856px]:w-fit"
                     type="text"
                     placeholder="Search something here"
                   />
@@ -684,9 +719,9 @@ function App() {
                         alt=""
                       />
 
-                      <p className="font-semibold max-md:hidden">
+                      <p className="max-md:hidden">
                         Ishan C <br />
-                        <span className="font-medium text-gray-500">
+                        <span className="font-medium text-gray-400">
                           ishanc@mail.com
                         </span>
                       </p>
@@ -707,7 +742,7 @@ function App() {
                     <img
                       src="/down-arrow-5-svgrepo-com.svg  "
                       alt=""
-                      className="w-8 max-[320px]:hidden"
+                      className="w-8 "
                     />
                   </div>
                 </div>
@@ -719,16 +754,16 @@ function App() {
                 <div className="head flex justify-between ">
                   <h2 className="font-bold text-5xl leading-10">
                     Hi There, <br />
-                    <span className="font-thin text-lg text-gray-500">
+                    <span className="font-regular text-lg text-gray-400">
                       Welcome To Paytide.
                     </span>
                   </h2>
 
                   <a
                     href=""
-                    className="group h-fit flex gap-3 justify-center items-center py-3 px-10 bg-violet-600 rounded-xl py-3.5 px-7 hover:bg-transparent hover:border-2 hover:border-violet-600 hover:py-3 hover:px-[1.6rem] max-md:p-3.5 max-md:hover:p-3"
+                    className="group h-fit flex gap-3 justify-center items-center py-3 px-10 bg-violet-600 rounded-xl py-3.5 px-7 max-md:p-3.5 max-md:hover:p-3 hover:bg-violet-500"
                   >
-                    <span className=" text-white whitespace-nowrap group-hover:text-black max-md:hidden">
+                    <span className=" text-white whitespace-nowrap max-md:hidden">
                       Create Reports
                     </span>
                     <svg
@@ -749,7 +784,6 @@ function App() {
                         <path
                           d="M6 12H18M12 6V18"
                           stroke="#ffffff"
-                          className="group-hover:stroke-black"
                           stroke-width="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
@@ -760,13 +794,13 @@ function App() {
                 </div>
 
                 <div className="cards mt-9">
-                  <div className="top grid grid-cols-4 grid-rows-1 gap-4 max-[1024px]:grid-cols-2">
+                  <div className="top grid grid-cols-4 grid-rows-1 gap-4 max-[1024px]:grid-cols-2 max-[320px]:grid-cols-1">
                     <div className="balance flex flex-col gap-3 bg-white p-5 rounded-xl">
                       <div className="head flex gap-2 items-center">
                         <img
                           src="/money.svg"
                           alt=""
-                          className="w-6 rounded-full max-[320px]:hidden"
+                          className="w-6 rounded-full"
                         />
                         <h3 className="text-lg max-sm:text-base">
                           Company Balance
@@ -777,7 +811,7 @@ function App() {
 
                       <p className="body font-bold text-2xl leading-7 sm: max-sm:text-lg break-all">
                         $123,350,00.56 <br />
-                        <span className="font-normal text-base text-gray-500">
+                        <span className="font-regular text-base text-gray-400">
                           30% increase since last month.
                         </span>
                       </p>
@@ -788,7 +822,7 @@ function App() {
                         <img
                           src="/note.svg"
                           alt=""
-                          className="w-6 rounded-full max-[320px]:hidden"
+                          className="w-6 rounded-full"
                         />
                         <h3 className="text-lg max-sm:text-base">
                           Company Expense
@@ -799,7 +833,7 @@ function App() {
 
                       <p className="body font-bold text-2xl leading-7 max-sm:text-lg break-all">
                         $55,000.00 <br />
-                        <span className="font-normal text-base text-gray-500">
+                        <span className="font-regular text-base text-gray-400">
                           10% increase since last month.
                         </span>
                       </p>
@@ -810,7 +844,7 @@ function App() {
                         <img
                           src="/wallet (1).svg"
                           alt=""
-                          className="w-6 rounded-full max-[320px]:hidden"
+                          className="w-6 rounded-full"
                         />
                         <h3 className="text-lg max-sm:text-base">
                           Upcoming Salary Amount
@@ -821,7 +855,7 @@ function App() {
 
                       <p className="body font-bold text-2xl leading-7 max-sm:text-lg break-all">
                         $4,350,00.89 <br />
-                        <span className="font-normal text-base text-gray-500">
+                        <span className="font-regular text-base text-gray-400">
                           3,121 employees
                         </span>
                       </p>
@@ -832,7 +866,7 @@ function App() {
                         <img
                           src="/coin.svg"
                           alt=""
-                          className="w-6 rounded-full max-[320px]:hidden"
+                          className="w-6 rounded-full"
                         />
                         <h3 className="text-lg max-sm:text-base">
                           Upcoming Salary Date
@@ -843,7 +877,7 @@ function App() {
 
                       <p className="body font-bold text-2xl leading-7 max-sm:text-lg break-all">
                         July 5th, 2024 <br />
-                        <span className="font-normal text-base text-gray-500">
+                        <span className="font-regular text-base text-gray-400">
                           In 4 days time
                         </span>
                       </p>
@@ -1034,7 +1068,7 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="bottom mt-8 grid grid-cols-3 grid-rows-3 gap-6 max-md:grid-cols-1 max-xl:grid-rows-2 max-xl:grid-cols-2">
+                  <div className="bottom mt-8 grid grid-cols-3 grid-rows-3 gap-6 max-md:grid-cols-1 max-xl:grid-rows-2 max-xl:grid-cols-2 max-md:grid-rows-3">
                     <div className="list bg-white py-5 px-7 rounded-xl col-span-2 row-span-3 flex flex-col justify-around max-xl:hidden">
                       <div className="head flex justify-between items-center">
                         <div className="transition-all duration-100 h-fit border-2 rounded-xl flex items-center gap-3 px-3.5 py-2.5 max-md:hidden hover:border-violet-400">
@@ -1044,7 +1078,7 @@ function App() {
                             alt=""
                           />
                           <input
-                            className="text-gray-500 outline-none w-fit"
+                            className="text-gray-400 outline-none w-fit"
                             type="text"
                             placeholder="Search something here"
                           />
@@ -1178,7 +1212,7 @@ function App() {
                     </div>
 
                     <div className="payment bg-white py-5 px-7 rounded-xl flex flex-col justify-between max-md:justify-around max-md:py-2">
-                      <div className="wrapper">
+                      <div className="wrapper max-md:mt-5">
                         <div className="head flex items-center gap-2">
                           <img
                             className="w-8 rounded-full"
@@ -1192,12 +1226,12 @@ function App() {
 
                       <p className="body text-2xl font-bold max-md:hidden">
                         Zenith Bank Account <br />
-                        <span className="text-base font-normal text-green-600">
+                        <span className="text-base font-regular text-green-600">
                           Connected
                         </span>
                       </p>
 
-                      <div className="flex flex-col justify-between border-2 px-4 py-3 rounded-2xl max-sm:items-center md:hidden">
+                      <div className="flex flex-col justify-between border-2 px-4 py-3 rounded-2xl max-sm:items-center md:hidden max-md:mb-5">
                         <div className="client flex gap-6 items-center mb-4 max-sm:flex-col">
                           <img
                             className="w-20"
@@ -1207,7 +1241,7 @@ function App() {
                           <div className="text font-bold flex flex-col">
                             <p className="body text-lg font-bold">
                               Zenith Bank Account <br />
-                              <span className="text-base font-normal text-green-600">
+                              <span className="text-base font-regular text-green-600">
                                 Connected
                               </span>
                             </p>
@@ -1216,8 +1250,8 @@ function App() {
                       </div>
                     </div>
 
-                    <div className="client bg-white py-8 px-7 rounded-xl row-span-2 max-md:mb-16 flex flex-col justify-between">
-                      <div className="head flex justify-between">
+                    <div className="client h-fit bg-white py-8 px-7 rounded-xl row-span-2 flex flex-col justify-between">
+                      <div className="head flex justify-between mb-6">
                         <div className="front flex items-start gap-5">
                           <img
                             className="w-9 max-[1600px]:hidden"
@@ -1232,7 +1266,7 @@ function App() {
                           </p>
                         </div>
 
-                        <div className="back mt-2.5 flex flex-col items-end max-xl:hidden">
+                        <div className="back flex flex-col items-end max-xl:hidden">
                           <span className="text-indigo-600 mr-2">
                             April 1, 2024
                           </span>
@@ -1255,7 +1289,7 @@ function App() {
                           />
                           <div className="text font-bold flex flex-col">
                             <span>Angela Nagelsman</span>
-                            <span className="font-normal text-gray-600">
+                            <span className="font-regular text-gray-600">
                               Saphore Inc
                             </span>
                           </div>

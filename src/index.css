@@ -2,10 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    font-family: "Jakarta Sans", sans-serif;
-  }
+@font-face {
+  font-family: "Regular";
+  src: local("PlusJakartaSans-Regular"),
+    url("./fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Medium";
+  src: local("PlusJakartaSans-Medium"),
+    url("./fonts/PlusJakartaSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SemiBold";
+  src: local("PlusJakartaSans-SemiBold"),
+    url("./fonts/PlusJakartaSans-SemiBold.ttf ") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: local("PlusJakartaSans-Bold"),
+    url("./fonts/PlusJakartaSans-Bold.ttf") format("truetype");
 }
 
 .mobile-drop {
