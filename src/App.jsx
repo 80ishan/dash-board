@@ -673,13 +673,20 @@ function App() {
                 </a>
               </div>
             </div>
-
-            <a href="" className="touch w-full h-full"></a>
+            <label
+              htmlFor="check"
+              className="touch w-full h-full cursor-pointer"
+            >
+              <div></div>
+            </label>
           </div>
 
-          <div className="right min-h-fit w-full col-span-6 col-start-2">
+          <div className="right min-h-fit w-full col-span-6 col-start-2F">
             <header className="header w-[full] flex items-center border-b-2 border-gray-300 px-7 py-5 justify-between">
-              <label htmlFor="check" className="menu h-fit md:hidden">
+              <label
+                htmlFor="check"
+                className="menu h-fit md:hidden cursor-pointer"
+              >
                 <img className="w-10 my-auto" src="/burger-menu.svg" alt="" />
               </label>
 
