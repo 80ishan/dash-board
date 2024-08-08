@@ -516,7 +516,7 @@ function App() {
                         src="/dashboard-svgrepo-com.svg"
                         alt=""
                       />
-                      Dashboard
+                      <span className="text-left">Dashboard</span>
                     </div>
                   </li>
                 </a>
@@ -529,7 +529,7 @@ function App() {
                         src="/people-svgrepo-com.svg    "
                         alt=""
                       />
-                      All Employees
+                      <span className="text-left">All Employees</span>
                     </div>
                   </li>
                 </a>
@@ -542,7 +542,7 @@ function App() {
                         src="/clipboard-text-svgrepo-com.svg  "
                         alt=""
                       />
-                      Checklist
+                      <span className="text-left">Checklist</span>
                     </div>
                   </li>
                 </a>
@@ -555,7 +555,7 @@ function App() {
                         src="/dollar-sign-round-svgrepo-com.svg"
                         alt=""
                       />
-                      Payroll
+                      <span className="text-left">Payroll</span>
                     </div>
                   </li>
                 </a>
@@ -568,7 +568,7 @@ function App() {
                         src="/trend-up-svgrepo-com.svg"
                         alt=""
                       />
-                      Expenses Analytics
+                      <span className="text-left">Expenses Analytics</span>
                     </div>
                   </li>
                 </a>
@@ -581,7 +581,7 @@ function App() {
                         src="/percentage-label-svgrepo-com.svg"
                         alt=""
                       />
-                      Tax Advice
+                      <span className="text-left">Tax Advice</span>
                     </div>
                   </li>
                 </a>
@@ -594,7 +594,7 @@ function App() {
                         src="/suitcase-svgrepo-com.svg"
                         alt=""
                       />
-                      Accounting
+                      <span className="text-left">Accounting</span>
                     </div>
                   </li>
                 </a>
@@ -607,7 +607,7 @@ function App() {
                         src="/group-add-people-svgrepo-com.svg"
                         alt=""
                       />
-                      Recruitement
+                      <span className="text-left">Recruitment</span>
                     </div>
                   </li>
                 </a>
@@ -620,7 +620,7 @@ function App() {
                         src="/settings-svgrepo-com.svg"
                         alt=""
                       />
-                      Settings
+                      <span className="text-left">Settings</span>
                     </div>
                   </li>
                 </a>
@@ -633,7 +633,7 @@ function App() {
                         src="/headphones-alt-2-svgrepo-com.svg  "
                         alt=""
                       />
-                      Help & Support
+                      <span className="text-left">Help & Support</span>
                     </div>
                   </li>
                 </a>
